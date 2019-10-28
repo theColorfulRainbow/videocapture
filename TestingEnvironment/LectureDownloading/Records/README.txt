@@ -1,0 +1,1 @@
+This folder contains a csv file for each subject that has particpated in the lecture recording project. It is used to determine if we have already downloading the lecture and segmented, if we have (its in the csv file) we ignore it. 

@@ -1,0 +1,14 @@
+# HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
+# This file can be used by wget, curl, aria2c and other standard compliant tools.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://echo360.org.uk/section/bfc60ac1-e1b0-4d4a-9699-411e3449bf35/home"
+#   2) curl --cookie cookies.txt "https://echo360.org.uk/section/bfc60ac1-e1b0-4d4a-9699-411e3449bf35/home"
+#   3) aria2c --load-cookies cookies.txt "https://echo360.org.uk/section/bfc60ac1-e1b0-4d4a-9699-411e3449bf35/home"
+#
+echo360.org.uk	FALSE	/lti/badffe4a-e87d-419a-8fc7-6ad53ee878b2/links	FALSE	0		
+echo360.org.uk	FALSE	/section/bfc60ac1-e1b0-4d4a-9699-411e3449bf35	FALSE	0		
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Key-Pair-Id	APKAIPMYRDQXV3PXG2XA
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Policy	eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vKi5lY2hvMzYwLm9yZy51ay8qNzVmMTY5NmEtMDY4Yi00Y2U3LTgzYzAtYjAzNDU1YzBmYTM2LyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1NzIyNzIyMDV9fX1dfQ__
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Signature	EyRn-aWEbH1mRaiSzIZz4TpAs8L5mXrmJ5zmx9q3thDyN6v0PvXICxU1M4EamWXnaRQMq2wuEjsoCbMbSOycGujx1BFER8reJWfifRvLAAlPSD26iwfoHNykAVW-EOnIOQTlGL8s9ZSe42Yv51wXgBXlJDY0Md~qiY83-C3-KZwgJh1~0qIGdp3W2nVSO4nZwkjKwVegA7YLG43AkYUaxEjIaFNPriOsPmSYkKZaBTDmTNwdP2ti2ciMsXv3u0yyxAyRngNNQt0tmEmsqAhuSvOSrzubmXRpnLD-1zR2VdOeqye8mAU-LusI-cPohuoR0yeWV-AVc2J9RMVXAyil2g__
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Tracking2	MTU3MjI2ODYwNTE2MuKQn+KQn+KQn+KQnzc1ZjE2OTZhLTA2OGItNGNlNy04M2MwLWIwMzQ1NWMwZmEzNuKQn+KQn+KQn+KQny5lY2hvMzYwLm9yZy51a+KQn+KQny8
+echo360.org.uk	FALSE	/	TRUE	0	PLAY_SESSION	b0628c718f7e21693e2fe84b5db173594639843c-inIframe=false&amp;ltiContextId=INFR100692019-0SV1SEM1&amp;returnUrl=https%3A%2F%2Fwww.learn.ed.ac.uk%2Fwebapps%2Fosc-BasicLTI-BB5d1b15b77a8ac%2Freturn.jsp%3FglobalNavigation%3Dfalse%26id%3Dmediah%26course_id%3D_72925_1%26content_id%3D_3857222_1%26lti_page%3Dtool%26&amp;lmsResourceId=INFR100692019-0SV1SEM1_3857222_1&amp;isHomeworkContentRequest=false&amp;role=Student&amp;LTI=true&amp;institution=75f1696a-068b-4ce7-83c0-b03455c0fa36&amp;d2LEmbed=false&amp;courseSectionSourcedId=&amp;lmsName=Blackboard&amp;roles=Student&amp;productFamilyCode=false&amp;csrfToken=1fb41eafd9ada4c0f61de8048e97155da6d72ce1-1572265005112-31f4c0c5d21e1d2a1f20fd0e&amp;contextTitle=Introductory+Applied+Machine+Learning+%282019-2020%29%5BSEM1%5D&amp;isEmbedContentRequest=false&amp;lmsProfileId=badffe4a-e87d-419a-8fc7-6ad53ee878b2&amp;contextLabel=INFR100692019-0SV1SEM1&amp;user=5e4bb1f2-7781-47fd-a280-82eb0ca74d50
