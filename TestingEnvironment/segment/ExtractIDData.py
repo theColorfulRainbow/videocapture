@@ -37,6 +37,7 @@ class ExtractIDDataQR(ExtractIDData):
         final_result = ""
         for result in results:
             final_result += str(result.data.decode('utf-8'))
+        self.logger.debug("Data: {}".format(final_result))
         return final_result
 
 # used to extract the code via text recognition using tesseract

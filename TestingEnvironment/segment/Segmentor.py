@@ -34,30 +34,30 @@ class Segmentor(object):
     logger = logging.getLogger("Logger")
 
 
-    def __init__(self, video_dir, sub_clip_dir, subject):
+    def __init__(self, video_dir, sub_clip_dir, video):
         # self.logger.setLevel(logging.DEBUG)                  # change level depending on what you want to see
         self.logger.info("starting video file thread...")
 
         # replace with something else, like reading a csv file
         self.COURSE_ID_LIST = ['Signals and Communications 2','Signals and Communications 3','Digital Signal Analysis 4','Software Design and Modelling']
 
-        self.initialise_variables(video_dir, sub_clip_dir, subject)
+        self.initialise_variables(video_dir, sub_clip_dir, video)
         # start reading frames
         self.initialise_reading_frames(self.video_dir, self.id_extractor)
         # start extracting data from frames
         self.initialise_extracting_data(self.fvrf, self.id_extractor)
 
 
-    def initialise_variables(self, video_dir, sub_clip_dir, subject):
+    def initialise_variables(self, video_dir, sub_clip_dir, video):
         self.logger.debug("Initialising Variables...")
         self.dictionary_frame_data = {}
         self.video_dir = video_dir
         # We are using the QR decoding procedure
         self.id_extractor = ExtractIDDataQR()
-        # save the subject of the video we are segmenting
-        self.subject = subject
+        # save the video of the video we are segmenting
+        self.video = video
         # we are encoding the data via its course_code index, thus use CourseCodeVerifier
-        self.verifier = CourseCodeVerifier(subject)
+        self.verifier = CourseCodeVerifier(video)
         # start the FPS timer
         self.fps = FPS().start()
         # better to get exact frame rate from cv2 but seems to break this code/tesseract
@@ -97,7 +97,7 @@ class Segmentor(object):
             #         return
             # we are checking that the data we have is what we expect
             if (not (self.verifier.verify(data))):
-                self.logger.debug("Data not verified")
+                # self.logger.debug("Data not verified")
                 return
 
             key_data = data
@@ -240,7 +240,7 @@ class Segmentor(object):
         # print ('-' * 60)
         self.logger.info("Times Array: {}".format(times_array))
         # print ('-' * 60)
-        video_name = self.subject.get_video_name()
+        video_name = self.video.get_video_name()
         # pass times as list to sub_clips.py
         self._create_sub_clips(self.video_dir, self.sub_clip_dir, times_array, video_name)
 

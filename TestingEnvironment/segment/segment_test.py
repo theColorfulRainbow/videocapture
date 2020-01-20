@@ -5,6 +5,7 @@ import time
 from Subject import Subject, Subject_List
 import logging
 import Logger
+from Video import Video
 
 # gets path to scripts for downloading videos
 # lecture_downloading_path = os.path.join(os.path.normpath(os.getcwd() + os.sep + os.pardir + os.sep + os.pardir),"LectureDownloading")
@@ -38,9 +39,12 @@ def upload_video(video_dir):
 # the main operation
 def main():
 
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
     # download and get all the videos to segment
-    videos = download_lectures()
+    # videos = download_lectures()
+
+    # testing the qr video we made
+    videos = [Video("SCEE08007","2017-2018","2019-08-10T12:00Z","primary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/lecture_recording/TestingEnvironment/TestScripts/QR_testing/segmentation_test/test_QR_13s.mp4")]
     logger.info("Lectures Downloaded!")
     # get all the subjects
     subjects = Subject_List(COURSE_CSV_FILE)

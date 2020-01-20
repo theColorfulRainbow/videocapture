@@ -1,14 +1,16 @@
 # this class is abstract in the way it will verify if the data we recieve is vlid or not
 
-from Subject import Subject
+from Video import Video
+import Logger
+import logging
 
 class Verifier(object):
 
-    def __init__(self, subject):
+    def __init__(self, video):
         self.verified = False
         self.data_index = -1
-        # self.key_data = ""
-        self.subject = subject
+        self.video = video
+        self.logger = logging.getLogger("Logger")
 
     def verify(self, data):
         self.verified = self._verify_data(data)
@@ -18,16 +20,6 @@ class Verifier(object):
     def get_data_index(self, data):
         self.data_index = self._extract_data_index(data)
         return self.data_index
-
-    # returns the key used to uniquely identify this piece of data, usually the data without the index
-    # def get_key_data(data):
-    #     self.key_data = self._extract_key_data(data)
-    #     return self.key_data
-
-    # extracts the data that is unqiue to these lecture slides
-    # def _extract_key_data(data):
-    #     key_data = ""
-    #     return key_data
 
     # returns the index encoded within the data
     def _extract_data_index(data):
@@ -42,18 +34,19 @@ class Verifier(object):
 # This class is used when you using data that encodes the course code
 class CourseCodeVerifier(Verifier):
 
-    def __init__(self, subject):
-        Verifier.__init__(self, subject)
-        self.course_codes = list()  # read the course codes from a csv file and save them into here
-
+    def __init__(self, video):
+        Verifier.__init__(self, video)
+        self.course_code = video.code # read the course codes from a csv file and save them into here
 
     # check if the data is in the course codes, if not then its not verified
     def _verify_data(self, data):
-        if (data in self.course_codes):
+        if (self.course_code in data):
             self.verified = True
+            self.logger.debug("Data is Verified!")
             return True
         else:
             self.verified = False
+            self.logger.debug("Data is not Verified!")
             return False
 
     def _extact_data_index(data):
@@ -80,8 +73,8 @@ class CourseCodeVerifier(Verifier):
 
 class CourseNameVerifier(Verifier):
 
-    def __init__(self, subject):
-        Verifier.__init__(self, subject)
+    def __init__(self, video):
+        Verifier.__init__(self, video)
         self.course_names = list()  # read the course codes from a csv file and save them into here
         self.course_names = ['Signals and Communications 2','Signals and Communications 3','Digital Signal Analysis 4','Software Design and Modelling']
 
@@ -116,14 +109,14 @@ class CourseNameVerifier(Verifier):
 # this will chekc if the data given is of format
 class TopicVerifier(Verifier):
 
-    def __init__(self,subject):
-        Verifier.__init__(self, subject)
+    def __init__(self,video):
+        Verifier.__init__(self, video)
         self.topic_names = list()  # read the course codes from a csv file and save them into here
         self.topic_name = "Topic nr."
 
     # check if the data is in the course codes, if not then its not verified
     def _verify_data(self, data):
-        if (topic_name in data) and (self.subject.course_name in data):
+        if (topic_name in data) and (self.video.course_name in data):
             self.verified = True
             return True
         else:
