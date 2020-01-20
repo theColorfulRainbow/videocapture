@@ -3,6 +3,9 @@ import pandas as pd
 from Video import Video
 import logging
 import Logger
+from Subject import *
+
+COURSE_CSV_FILE = os.path.join(os.getcwd(), "Docs/subject.csv")
 
 cookieErr  = "\nCould not access Echo360. Please check your cookie data."
 cook = {}
@@ -16,15 +19,25 @@ def save_to_csv(course_code, year_active, date_time, video_type, csv):
     with open(csv,'a') as fd:
         fd.write(csv_entry)
 
+def get_participating_courses():
+    participating_courses = Subject_List(COURSE_CSV_FILE).subject_set  # will contain corse code of all participating subjects
+    logger.info("Courses Participating: {}".format(participating_courses))
+    print("Courses Participating: {}".format(participating_courses))
+    return participating_courses
+
 def remove_courses_not_involved_in_project(courses):
-    participating_courses = ["SCEE08007"]  # will contain corse code of all participating subjects
+    participating_courses = get_participating_courses()
     courses_out = []
     for i in range(len(courses)):
         course = courses[i]
-        if course["courseCode"] not in participating_courses:
-            pass
-        else:
-            courses_out.append(course)
+        #logger.debug("Year Active: {}".format(course["yearActive"]))
+        # if course["courseCode"] not in participating_courses.code:
+        for subject in participating_courses:
+            if (subject.code != course["courseCode"]):
+                pass
+            else:
+                courses_out.append(course)
+                break
     return courses_out
 
 
@@ -32,23 +45,17 @@ def already_downloaded(date_time,video_type,courseCode,year_active):
     csv_file_name = "{}.csv".format(courseCode)
     csv_file = pd.read_csv(open(os.path.join("Records",csv_file_name),'r'), encoding='utf-8', engine='c')
     in_csv = False
-
     # logger.debug("Already Dowloaded:: date_time: {}, video_type: {}, courseCode: {}, year active: {}".format(date_time,video_type,courseCode,year_active))
     # read the csv file and check if we have already downloaded this video
     for line in csv_file.values:
         year_started=line[0]
         date_time_uploaded=line[1]
         video_number=line[2]
-
         # logger.debug("Year Started: {}, Date_time_uploaded: {}, video_number: {}\n\n".format(year_started, date_time_uploaded, video_number))
         # check if we have a match
         if (year_started == year_active and date_time_uploaded == date_time and video_number == video_type):
             in_csv = True
-
     return in_csv
-
-
-
 
 def printlog(msg):
     with open("log.txt","a") as lF:
@@ -91,6 +98,7 @@ def begin():
     global cook
     cook = getCookies()
     (courses,terms) = getEnrollments()
+    logger.setLevel(logging.DEBUG)
     logger.debug(courses)
     # exit()
 
@@ -99,7 +107,7 @@ def begin():
     for course in courses:
         if len(sys.argv) == 1 or (len(sys.argv) > 1 and course["sectionId"] in sys.argv):
             courseTerm = terms[course["termId"]]["name"]
-            # downloadCourse(course,courseTerm)
+            downloadCourse(course,courseTerm)
             logger.debug('\ncourse = {}\ncourseTerm = {}'.format(course,courseTerm))
             exit()
 
@@ -212,7 +220,9 @@ def download_lecture(name,date,course_term):
     logger.debug("Finished Downloading returning: {}".format(COURSES))
     return COURSES
 
-# download_lecture('Signals and Communication Systems 2','2019-08-02','2017-2018')
+#download_lecture('Signals and Communication Systems 2','2019-08-02','2017-2018')
 
-# if __name__ == '__main__':
-    # downloadCourse("SCEE080072017-8SV1SEM2")
+if __name__ == '__main__':
+    #downloadCourse("SCEE080072017-8SV1SEM2")
+    # get_participating_courses()
+    begin()

@@ -8,6 +8,8 @@ Subject Class
 import numpy as np
 import pandas as pd
 
+
+# A list of all the Subjects
 class Subject_List(object):
 
     def __init__(self,file_dir):
@@ -99,9 +101,6 @@ class Subject(object):
         if isinstance(other,type(self)):
             return self.__key()==other.__key()
         return NotImplemented
-
-
-
 
 import os
 import sys

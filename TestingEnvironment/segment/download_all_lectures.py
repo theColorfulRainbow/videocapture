@@ -1,24 +1,41 @@
 import requests, json, os, shutil, sys
 import pandas as pd
+from Video import Video
+import logging
+import Logger
+from Subject import *
+
 cookieErr  = "\nCould not access Echo360. Please check your cookie data."
 cook = {}
 dowloaded_videos_path = os.path.join(os.getcwd(),"downloaded_videos")   # ensures the vidoes are downaloded in the "downloaded_videos" folder
 to_segment_videos = []  # (path_to_video,course_code)
+COURSE_CSV_FILE = os.path.join(os.getcwd(), "Docs/subject.csv")
+logger = logging.getLogger("Logger")
 
 def save_to_csv(course_code, year_active, date_time, video_type, csv):
     csv_entry = ("{},{},{}\n".format(year_active,date_time,video_type))
     with open(csv,'a') as fd:
         fd.write(csv_entry)
 
+def get_participating_courses():
+    participating_courses = Subject_List(COURSE_CSV_FILE).subject_set  # will contain corse code of all participating subjects
+    logger.info("Courses Participating: {}".format(participating_courses))
+    print("Courses Participating: {}".format(participating_courses))
+    return participating_courses
+
 def remove_courses_not_involved_in_project(courses):
-    participating_courses = ["SCEE08007"]  # will contain corse code of all participating subjects
+    participating_courses = get_participating_courses()
     courses_out = []
     for i in range(len(courses)):
         course = courses[i]
-        if course["courseCode"] not in participating_courses:
-            pass
-        else:
-            courses_out.append(course)
+        #logger.debug("Year Active: {}".format(course["yearActive"]))
+        # if course["courseCode"] not in participating_courses.code:
+        for subject in participating_courses:
+            if (subject.code != course["courseCode"]):
+                pass
+            else:
+                courses_out.append(course)
+                break
     return courses_out
 
 
@@ -100,8 +117,8 @@ def downloadCourse(course,year_active):
     resp = requests.get(url, cookies=cook)
     if os.path.isdir(dowloaded_videos_path) == False:
         os.mkdir(dowloaded_videos_path)
-    if os.path.isdir(year_active) == False:
-        os.mkdir(year_active)
+    if os.path.isdir(dowloaded_videos_path + "/" + year_active) == False:
+        os.mkdir(dowloaded_videos_path + "/" + year_active)
     if os.path.isdir(dowloaded_videos_path + "/" + year_active + "/" + course["courseCode"]) == False:
         os.mkdir(dowloaded_videos_path + "/" + year_active + "/" + course["courseCode"])
     with open(dowloaded_videos_path + "/" + year_active + "/" + course["courseCode"] + "/raw.json","wb") as jf:
