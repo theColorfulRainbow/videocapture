@@ -28,12 +28,12 @@ def remove_courses_not_involved_in_project(courses):
     courses_out = []
     for i in range(len(courses)):
         course = courses[i]
+        print(course)
         #logger.debug("Year Active: {}".format(course["yearActive"]))
         # if course["courseCode"] not in participating_courses.code:
         for subject in participating_courses:
-            if (subject.code != course["courseCode"]):
-                pass
-            else:
+            # check if code is correct and year actieve as well (2019-0 means 2019-2020)
+            if (subject.code == course["courseCode"] and ('2019-0' in str(course['sectionName']))):
                 courses_out.append(course)
                 break
     return courses_out
@@ -189,7 +189,9 @@ def downloadResource(url,date_time,video_type,courseCode,year_active):
 
     # save downloaded data to csv
     save_to_csv(courseCode, year_active,date_time, video_type, csv_file_name)
+    this_video = Video(courseCode, year_active, date_time, video_type, video_path)
     # save video path to to_segment_videos
-    to_segment_videos.append([video_path,courseCode])
+    to_segment_videos.append(this_video)
+    logger.info("Successfully Downloaded: {}".format(this_video))
 
 begin()

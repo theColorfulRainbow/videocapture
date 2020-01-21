@@ -106,7 +106,7 @@ class Segmentor(object):
                 saved_frame_number = self.dictionary_frame_data[key_data]
                 if (saved_frame_number < frame_number):
                     self.dictionary_frame_data[key_data] = frame_number
-                    self.logger.debug("Updated frame data dictionary with new index {} vs old index {}",format(fame_number, saved_frame_number))
+                    self.logger.debug("Updated frame data dictionary with new index {} vs old index {}",format(frame_number, saved_frame_number))
             else:
                 self.logger.debug("Key data not in frame data dictionary, adding entry now...")
                 self.dictionary_frame_data[key_data] = frame_number

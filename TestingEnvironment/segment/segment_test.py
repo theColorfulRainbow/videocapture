@@ -12,7 +12,7 @@ from Video import Video
 # allows us to import download scripts
 # sys.path.insert(1, lecture_downloading_path)
 
-from download_test import download_lecture
+from download_all_lectures import begin as download_lecture
 
 logger = logging.getLogger("Logger")
 
@@ -30,7 +30,7 @@ def segment(video_path, segmented_video_path, subject):
 # downloads all the lectures
 def download_lectures():
     logger.info("Downloading Lectures...")
-    return download_lecture('Signals and Communication Systems 2','2019-08-02','2017-2018')
+    return download_lecture()
 
 # uploads all the segmented videos and performs safety checks
 def upload_video(video_dir):
@@ -42,9 +42,9 @@ def main():
     logger.setLevel(logging.DEBUG)
     # download and get all the videos to segment
     # videos = download_lectures()
-
+    # print('videos=\n{}'.format(videos))
     # testing the qr video we made
-    videos = [Video("SCEE08007","2017-2018","2019-08-10T12:00Z","primary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/lecture_recording/TestingEnvironment/TestScripts/QR_testing/segmentation_test/test_QR_13s.mp4")]
+    videos = [Video("SCEE08007","2017-2018","2019-08-10T12:00Z","secondary.mp4","/afs/inf.ed.ac.uk/user/s16/s1628465/Desktop/my_git/TestingEnvironment/segment/downloaded_videos/2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4")]
     logger.info("Lectures Downloaded!")
     # get all the subjects
     subjects = Subject_List(COURSE_CSV_FILE)

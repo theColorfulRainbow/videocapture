@@ -106,3 +106,141 @@ Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
 Downloading course: SCEE08007 (SCEE08007)
 Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
 Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2018-2019/SCEE08007/2019-01-15T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-15T11.10.00.000Z/secondary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-18T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-22T11.10.00.000Z/primary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2018-2019/SCEE08007/2019-01-15T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-15T11.10.00.000Z/secondary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-18T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-22T11.10.00.000Z/primary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2018-2019/SCEE08007/2019-01-15T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-15T11.10.00.000Z/secondary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-18T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-22T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-22T11.10.00.000Z/secondary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-25T11.10.00.000Z/primary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2018-2019/SCEE08007/2019-01-15T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-15T11.10.00.000Z/secondary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-18T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-22T11.10.00.000Z/primary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-22T11.10.00.000Z/secondary.mp4
+Downloading resource: 2018-2019/SCEE08007/2019-01-25T11.10.00.000Z/primary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
