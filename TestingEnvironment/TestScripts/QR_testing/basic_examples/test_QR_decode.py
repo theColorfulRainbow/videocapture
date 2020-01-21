@@ -16,5 +16,6 @@ file_dir = os.path.join(my_dir,file_name)
 image = cv2.imread(file_dir, cv2.IMREAD_GRAYSCALE)
 scanner = zbar.Scanner()
 results = scanner.scan(image)
+print(results)
 for result in results:
     print((result.data.decode('utf-8')))
