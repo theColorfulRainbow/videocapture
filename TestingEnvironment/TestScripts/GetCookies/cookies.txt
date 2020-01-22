@@ -1,9 +1,0 @@
-.echo360.org.uk	_gat	1	1579458124	/	False	False	
-.echo360.org.uk	CloudFront-Tracking2	MTU3OTQ2MTY2NjkwMeKQn+KQn+KQn+KQnzc1ZjE2OTZhLTA2OGItNGNlNy04M2MwLWIwMzQ1NWMwZmEzNuKQn+KQn+KQn+KQny5lY2hvMzYwLm9yZy51a+KQn+KQny8	/	True	True	
-echo360.org.uk	PLAY_SESSION	bbc7d2acd91e92ca4765e19b502a6e5c0a364526-role=Student&institution=75f1696a-068b-4ce7-83c0-b03455c0fa36&roles=Student&csrfToken=30a400ee9bad5f9a82c0ae9e4b267a55b10574a5-1579458066829-389762318c1ef5adf37c5ff6&user=175fd4dd-fd02-436e-b2b8-79f4128e4489	/	True	True	
-.echo360.org.uk	CloudFront-Key-Pair-Id	APKAIPMYRDQXV3PXG2XA	/	True	True	
-.echo360.org.uk	CloudFront-Policy	eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vKi5lY2hvMzYwLm9yZy51ay8qNzVmMTY5NmEtMDY4Yi00Y2U3LTgzYzAtYjAzNDU1YzBmYTM2LyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1Nzk0NjUyNjZ9fX1dfQ__	/	True	True	
-.echo360.org.uk	CloudFront-Signature	aP073RM9PxGpnkg94sfdTeWjNMCWRoaCkeDzUv02ZWgzCmpp3SBIzXVON7G3HlqTQO1vy2nVAXRFyiRjyIqBvtqizwgRCUyldMpMOFAQsLYZYpwVELoYM4X3aQs~v0O1Yy1hBbj~Jy4~EVFncTpgnELd9oaAcZk0FI23cqQKSy7Mt7vqEufppj8OmVUfdCSLUYTyydzgRylYwM8TvV~nRK3Bago2h~qBoBqc13SfFu923kjl-kjSDAQ0wFMoqx08gdLJNzKFc6ec5pLqnjmIj4XgNzFEUn~ECDk4hQ43s9X~rW8wZdha1~FonVm3VB3CGofdBjAmlFYkB8EXMNYXpA__	/	True	True	
-echo360.org.uk		734	/	False	False	
-.echo360.org.uk	_ga	GA1.3.1242742612.1579458064	1642530068	/	False	False	
-.echo360.org.uk	_gid	GA1.3.107898491.1579458064	1579544468	/	False	False	

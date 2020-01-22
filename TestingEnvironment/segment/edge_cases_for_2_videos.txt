@@ -1,6 +1,0 @@
-edge cases:
-1) 1 video has 0 ids -> segment both based on IDS from 1 video
-2) both videos have 0 ids -> no segmentation
-3) 1 video has 4 ids | 1 video has 2 ids (that appear in previous video) -> compare timestamps and choose the latest one to be the point at which we segment, make sure to disregard QR seen for previous ones before then
-4) 1 video has 4 ids | 1 video has 2 ids (that don't appear in previous video) -> answer to 3 
-5) 1 video has 4 ids | 1 video has 4 ids far in time from the ones in video_1 -> choose far in time ones

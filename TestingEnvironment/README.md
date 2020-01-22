@@ -1,2 +1,0 @@
-- This is a direcotory used to store old files and used for testing purposes mainly
-- Old files can olso be found here in case something gets lost
