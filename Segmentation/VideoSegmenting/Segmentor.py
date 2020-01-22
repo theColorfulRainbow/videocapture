@@ -23,7 +23,7 @@ import re
 from PIL import Image, ImageFont, ImageDraw
 # from pytesseract import image_to_string
 from ExtractIDData import ExtractIDDataQR
-from Verifier import CourseCodeVerifier
+from Verifier import CourseCodeVerifier, TopicVerifier
 import datetime
 import logging
 # import MasterEnvironemnt.Logger 
@@ -57,7 +57,8 @@ class Segmentor(object):
         # save the video of the video we are segmenting
         self.video = video
         # we are encoding the data via its course_code index, thus use CourseCodeVerifier
-        self.verifier = CourseCodeVerifier(video)
+            #self.verifier = CourseCodeVerifier(video)
+        self.verifier = TopicVerifier(video)
         # start the FPS timer
         self.fps = FPS().start()
         # better to get exact frame rate from cv2 but seems to break this code/tesseract
@@ -123,7 +124,7 @@ class Segmentor(object):
         finally:
             self.lock.release() #release lock
         # replace with logger
-        self.logger.debug("DICTIONARY:\n{}\n".format(self.dictionary_frame_data))
+        self.logger.debug("Dictionary:\n{}\n".format(self.dictionary_frame_data))
 
 
     def start(self):
@@ -139,8 +140,8 @@ class Segmentor(object):
 
         self.logger.debug('Shutting Down... ')
         self.time_finish = time.time()
-        self.stop()
-
+        frame_stamp = self.stop()
+        return frame_stamp
     # doesnt work 
     # def _get_frame_rate(self,clip):
     #     self.logger.debug("Getting frame rate...")
@@ -224,14 +225,14 @@ class Segmentor(object):
         # cv2.destroyAllWindows()
 
         # print ('-' * 60)
-        self.logger.info(self.dictionary_frame_data)
+        # self.logger.info(self.dictionary_frame_data)
         # print ('-' * 60)
 
         # make sure the dictionary is in ascending order, with no skips else raise exception
-        ordered_dictionary = self._orderDictionary(self.dictionary_frame_data)
+        # ordered_dictionary = self._orderDictionary(self.dictionary_frame_data)
         # print ('-' * 60)
-        self.logger.info("Ordered Dictionary: {}".format(ordered_dictionary))
-        self.logger.info("Key Data -> frame number dictionary: {}".format(self.dictionary_frame_data))
+        # self.logger.info("Ordered Dictionary: {}".format(ordered_dictionary))
+        # self.logger.info("Key Data -> frame number dictionary: {}".format(self.dictionary_frame_data))
         # print ('-' * 60)
 
         # make sure there are no skips in the topic numbers
@@ -240,11 +241,16 @@ class Segmentor(object):
         times_array = self._frame_number_to_time(self.dictionary_frame_data)
 
         # print ('-' * 60)
-        self.logger.info("Times Array: {}".format(times_array))
+        # self.logger.info("Time Array: {}".format(times_array))
         # print ('-' * 60)
-        video_name = self.video.get_video_name()
+        # video_name = self.video.get_video_name()
         # pass times as list to sub_clips.py
-        self._create_sub_clips(self.video_dir, self.sub_clip_dir, times_array, video_name)
+        # self._create_sub_clips(self.video_dir, self.sub_clip_dir, times_array, video_name)
+        self.video.set_time_array(times_array)
+        self.video.set_topic_frame_dict(self.dictionary_frame_data)
+        self.video.set_number_of_frames(self.fvrf.frame_number)
+        # self.logger.debug("Frame Stamp Ordered Dictionary: {}".format(ordered_dictionary))
+        return (self.dictionary_frame_data)
 
 if __name__ == "__main__":
     cwd = os.getcwd()

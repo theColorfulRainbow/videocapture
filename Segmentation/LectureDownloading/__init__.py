@@ -10,5 +10,5 @@ sys.path.append(information_dir)
 sys.path.append(kaltura_dir)
 
 
-from Video import Video
+from Video import Video, same_video
 from Subject import Subject, Subject_List

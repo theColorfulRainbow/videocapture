@@ -1,16 +1,15 @@
 import requests, json, os, shutil, sys
 import pandas as pd
 import logging
-from Video import Video
+from Video import Video, same_video
 from Subject import Subject, Subject_List
-# from MasterEnvironemnt.Subject import Subject, Subject_List
 from LectureDownloading.config import COOKIES_FILE, COURSE_CSV_FILE, DOWNLOADED_VIDEOS_PATH, current_dir, RECORDS_PATH
 
 cookieErr  = "\nCould not access Echo360. Please check your cookie data."
 cook = {}
 
-to_segment_videos = []  # (path_to_video,course_code)
-
+to_segment_videos = []  # (Video)
+duo_videos = [] #[Video_primary, Video_secondary]   secondary can be null
 
 logger = logging.getLogger("Logger")
 
@@ -30,7 +29,6 @@ def _remove_courses_not_involved_in_project(courses):
     for i in range(len(courses)):
         course = courses[i]
         logger.debug(course)
-        #logger.debug("Year Active: {}".format(course["yearActive"]))
         # if course["courseCode"] not in participating_courses.code:
         for subject in participating_courses:
             # check if code is correct and year actieve as well (2019-0 means 2019-2020)
@@ -98,21 +96,6 @@ def _getEnrollments():
         _printlog("Make sure you have up-to-date cookies in 'cookies.txt'")
         raise SystemExit
 
-def begin():
-    global cook
-    cook = _getCookies()
-    (courses,terms) = _getEnrollments()
-
-    # remove courses that are not involved in the project
-    courses = _remove_courses_not_involved_in_project(courses)
-
-    for course in courses:
-        if len(sys.argv) == 1 or (len(sys.argv) > 1 and course["sectionId"] in sys.argv):
-            courseTerm = terms[course["termId"]]["name"]
-            downloadCourse(course,courseTerm)
-        
-    return to_segment_videos
-
 def downloadCourse(course,year_active):
     url = "https://echo360.org.uk/section/" + course["sectionId"] + "/syllabus"
     _printlog("Downloading course: %s (%s)" % (course["courseCode"], course["courseCode"]))
@@ -144,26 +127,34 @@ def downloadLessonList(lessonList,courseCode,year_active):
                 #if os.path.isdir(year_active + "/" + courseCode + "/" + date_time):
                 #    _printlog("Error. Duplicate entry. Have you taken a course twice?")
                 #    raise SystemExit
-                _downloadHQ(media["primaryFiles"],date_time,"primary.mp4",courseCode,year_active)
+                primary_video = _downloadHQ(media["primaryFiles"],date_time,"primary.mp4",courseCode,year_active)
+                secondary_video = None
                 if "secondaryFiles" in media and media["secondaryFiles"] != []:
-                    _downloadHQ(media["secondaryFiles"],date_time,"secondary.mp4",courseCode,year_active)
+                    secondary_video = _downloadHQ(media["secondaryFiles"],date_time,"secondary.mp4",courseCode,year_active)
+                # we will now append the primary and seconcdary video to (global) duo_videos
+                if (primary_video != None):
+                    duo_videos.append([primary_video,secondary_video])
+                logger.debug("Primary: {}\n&\nSecondary: {} have been appended to Duo Videos!".format(primary_video,secondary_video))
             if lesson["lesson"]["hasAvailableSlideDeck"] == True:
                 try:
                     date_time = lesson["lesson"]["startTimeUTC"].replace(":",".")
                 except:
                     date_time = lesson["lesson"]["lesson"]["createdAt"].replace(":",".")
                 slideDeck = lesson["lesson"]["slideDeck"]["media"]["media"]["originalFile"]
-                _downloadResource(slideDeck["url"],date_time,slideDeck["name"],courseCode,year_active)
+                video = _downloadResource(slideDeck["url"],date_time,slideDeck["name"],courseCode,year_active)
+                logger.debug("Not sure when this is called but it returned: {}".format(video))
 
 
-
+# returns the video being downloaded
 def _downloadHQ(medias,date_time,video_type,courseCode,year_active):
     bestIndex = 0
     for i in range(len(medias)):
         if medias[i]["size"] > medias[bestIndex]["size"]:
             bestIndex = i
-    _downloadResource(medias[i]["s3Url"],date_time,video_type,courseCode,year_active)
+    video = _downloadResource(medias[i]["s3Url"],date_time,video_type,courseCode,year_active)
+    return video
 
+# downlaod the video and creates the appropriate files
 def _downloadResource(url,date_time,video_type,courseCode,year_active):
     _printlog("Downloading resource: %s" % (year_active + "/" + courseCode + "/" + date_time + "/" + video_type))
     video_path = os.path.join(DOWNLOADED_VIDEOS_PATH,year_active,courseCode,date_time,video_type)
@@ -195,5 +186,37 @@ def _downloadResource(url,date_time,video_type,courseCode,year_active):
     # save video path to to_segment_videos
     to_segment_videos.append(this_video)
     logger.info("Successfully Downloaded: {}".format(this_video))
+    return this_video
+
+# used to find the due videos in a list of Video(s)
+def _create_duo_videos(videos):
+    duo_videos = []
+    # loop through all saved videos we have downloaded
+    for i in range(len(videos)):
+        current_video = videos[i]
+        #loop through all videos a part from current and check if they are equal
+        for j in range(i,len(videos)):
+            potential_video = videos[j]
+            # check if the current video matches another video
+            if (same_video(current_video,potential_video)):
+                duo_videos.append([current_video,potential_video])
+                break
+    return duo_videos
+        
+def begin():
+    global cook
+    cook = _getCookies()
+    (courses,terms) = _getEnrollments()
+
+    # remove courses that are not involved in the project
+    courses = _remove_courses_not_involved_in_project(courses)
+
+    for course in courses:
+        if len(sys.argv) == 1 or (len(sys.argv) > 1 and course["sectionId"] in sys.argv):
+            courseTerm = terms[course["termId"]]["name"]
+            downloadCourse(course,courseTerm)
+    
+    logger.info("Duo Videos: {}".format(duo_videos))
+    #return to_segment_videos
 
 begin()
