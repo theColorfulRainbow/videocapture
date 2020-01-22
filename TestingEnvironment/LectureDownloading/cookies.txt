@@ -1,0 +1,14 @@
+# HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
+# This file can be used by wget, curl, aria2c and other standard compliant tools.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://echo360.org.uk/section/e1074db8-9087-4d28-a4b8-afea5cb06742/home"
+#   2) curl --cookie cookies.txt "https://echo360.org.uk/section/e1074db8-9087-4d28-a4b8-afea5cb06742/home"
+#   3) aria2c --load-cookies cookies.txt "https://echo360.org.uk/section/e1074db8-9087-4d28-a4b8-afea5cb06742/home"
+#
+echo360.org.uk	FALSE	/lti/badffe4a-e87d-419a-8fc7-6ad53ee878b2/links	FALSE	0		
+echo360.org.uk	FALSE	/section/e1074db8-9087-4d28-a4b8-afea5cb06742	FALSE	0		
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Key-Pair-Id	APKAIPMYRDQXV3PXG2XA
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Policy	eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vKi5lY2hvMzYwLm9yZy51ay8qNzVmMTY5NmEtMDY4Yi00Y2U3LTgzYzAtYjAzNDU1YzBmYTM2LyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1NzIxODU4MDF9fX1dfQ__
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Signature	ULdmkaQKmQim0u2Mc~8aHRsxTXOZ~UGJ9rZThj6uSdpA4qEGq1j2DiWLpiNo62jYsQx0bwcXNRx1ZHAsfQQ-js4KxrFZGFsiQRdItBmAxP1-eqOmNCi1tkVQodj~uDV39OPPOyH4mHFY5~H2ICFpiozxrT4ox2L0Qg5juzUt7ErpNQ-QARno3WoDSSqXisUMX8Y-E4dxo9TygIIYjJolD4piSTFK~~0EABCxMFeGK3itA3SUwi9sU4bAK5WoSFr1Qeyy71GYOqBpF~6uPrnmh6sOBXljCuZP0Wbct-IHh~jJKSJsNRRih2uhk2TAi3by9GUAdxOt6fttunP-hN6NwA__
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Tracking2	MTU3MjE4MjIwMTI4MeKQn+KQn+KQn+KQnzc1ZjE2OTZhLTA2OGItNGNlNy04M2MwLWIwMzQ1NWMwZmEzNuKQn+KQn+KQn+KQny5lY2hvMzYwLm9yZy51a+KQn+KQny8
+echo360.org.uk	FALSE	/	TRUE	0	PLAY_SESSION	0a09309bf8ef0ce7dd24f1f3532b224420d5ccee-inIframe=false&amp;ltiContextId=ELEE110942019-0SV1SEM1&amp;returnUrl=https%3A%2F%2Fwww.learn.ed.ac.uk%2Fwebapps%2Fosc-BasicLTI-BB5d1b15b77a8ac%2Freturn.jsp%3FglobalNavigation%3Dfalse%26id%3Dmediah%26course_id%3D_74856_1%26&amp;lmsResourceId=ELEE110942019-0SV1SEM1&amp;isHomeworkContentRequest=false&amp;role=Student&amp;LTI=true&amp;institution=75f1696a-068b-4ce7-83c0-b03455c0fa36&amp;d2LEmbed=false&amp;courseSectionSourcedId=&amp;lmsName=Blackboard&amp;roles=Student&amp;productFamilyCode=false&amp;csrfToken=cdfc89a4fe25b474c65f55e8a67a25005a742496-1572178601251-30a18c0ac1e1cfb0a061df53&amp;contextTitle=Biosensors+4+%282019-2020%29%5BSEM1%5D&amp;isEmbedContentRequest=false&amp;lmsProfileId=badffe4a-e87d-419a-8fc7-6ad53ee878b2&amp;contextLabel=ELEE110942019-0SV1SEM1&amp;user=5e4bb1f2-7781-47fd-a280-82eb0ca74d50

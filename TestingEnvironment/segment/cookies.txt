@@ -1,0 +1,17 @@
+# HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
+# This file can be used by wget, curl, aria2c and other standard compliant tools.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://echo360.org.uk/section/d6e60b95-41cc-4dd6-9e65-647a09c1303b/home"
+#   2) curl --cookie cookies.txt "https://echo360.org.uk/section/d6e60b95-41cc-4dd6-9e65-647a09c1303b/home"
+#   3) aria2c --load-cookies cookies.txt "https://echo360.org.uk/section/d6e60b95-41cc-4dd6-9e65-647a09c1303b/home"
+#
+echo360.org.uk	FALSE	/lti/badffe4a-e87d-419a-8fc7-6ad53ee878b2/links	FALSE	0		
+echo360.org.uk	FALSE	/section/d6e60b95-41cc-4dd6-9e65-647a09c1303b	FALSE	0		
+echo360.org.uk	FALSE	/media/70ea0b48-7d06-43a1-8a34-6865f31aef2b	FALSE	0		277
+login.echo360.org.uk	FALSE	/	FALSE	0	PLAY_SESSION	fcd504d72af94b69c6bb64a6da47ef1b5a1943cb-afterLoginUrl=%2Fhome&amp;mobileApp=false
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Key-Pair-Id	APKAIPMYRDQXV3PXG2XA
+.echo360.org.uk	TRUE	/	TRUE	0	ECHO_JWT	eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFY2hvMzYwLkF1dGhuIiwic3ViIjoiNWU0YmIxZjItNzc4MS00N2ZkLWEyODAtODJlYjBjYTc0ZDUwIiwiZXhwIjoxNTc5NzM3NjI2LCJpYXQiOjE1Nzk2OTA4MjYsImp0aSI6Ijc2ZWE1MzU5LTZlYWEtNDc2My05ZmU0LWJmODk1YTk1MzhlZCIsImNvbnRlbnQiOnsic2Vzc2lvbklkIjoiZDJjMTJmZWItNTQyMC00MzU3LTgzMmQtM2RiYmM4MTQ2YTVlIiwidXNlcklkIjoiNWU0YmIxZjItNzc4MS00N2ZkLWEyODAtODJlYjBjYTc0ZDUwIiwiaW5zdGl0dXRpb25JZCI6Ijc1ZjE2OTZhLTA2OGItNGNlNy04M2MwLWIwMzQ1NWMwZmEzNiIsImRvbWFpbiI6ImVjaG8zNjAub3JnLnVrIiwia2V5SWQiOiI1ZDgwN2M0Ny1kZDMxLTQ3NjMtOGU0YS05YjdmMTUxMjk1OGMiLCJzc29JZCI6IjVlNGJiMWYyLTc3ODEtNDdmZC1hMjgwLTgyZWIwY2E3NGQ1MCIsInJvbGVzIjpbXX19.dMh86PUK8QBAodd_BI-b6y5DsHjQUTO-wPpKi5AsYJk
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Tracking2	MTU3OTY5NDQyNjk2OOKQn+KQn+KQn+KQnzc1ZjE2OTZhLTA2OGItNGNlNy04M2MwLWIwMzQ1NWMwZmEzNuKQn+KQn+KQn+KQny5lY2hvMzYwLm9yZy51a+KQn+KQny8
+echo360.org.uk	FALSE	/	TRUE	0	PLAY_SESSION	280e8c321405d0ffb92a40a11370929415c88109-inIframe=false&amp;ltiContextId=SCEE080072019-0SV1SEM2&amp;returnUrl=https%3A%2F%2Fwww.learn.ed.ac.uk%2Fwebapps%2Fosc-BasicLTI-BB5d1b15b77a8ac%2Freturn.jsp%3FglobalNavigation%3Dfalse%26id%3Dmediah%26course_id%3D_73356_1%26&amp;lmsResourceId=SCEE080072019-0SV1SEM2&amp;isHomeworkContentRequest=false&amp;role=Student&amp;LTI=true&amp;institution=75f1696a-068b-4ce7-83c0-b03455c0fa36&amp;d2LEmbed=false&amp;courseSectionSourcedId=&amp;isContentItemMessageRequest=false&amp;isAuthEmbedSupported=false&amp;lmsName=Blackboard&amp;roles=Student&amp;productFamilyCode=Blackboard&amp;csrfToken=125394c9391770676a5c08507f7ff798464d55b5-1579690826921-0c39f70be0f60340e332815f&amp;contextTitle=Signals+and+Communication+Systems+2+%282019-2020%29%5BSEM2%5D&amp;isEmbedContentRequest=false&amp;lmsProfileId=badffe4a-e87d-419a-8fc7-6ad53ee878b2&amp;contentItemMessageData=&amp;lmsPluginVersion=&amp;contextLabel=SCEE080072019-0SV1SEM2&amp;user=5e4bb1f2-7781-47fd-a280-82eb0ca74d50
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Policy	eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vKi5lY2hvMzYwLm9yZy51ay8qNzVmMTY5NmEtMDY4Yi00Y2U3LTgzYzAtYjAzNDU1YzBmYTM2LyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1Nzk2OTgwMjZ9fX1dfQ__
+.echo360.org.uk	TRUE	/	TRUE	0	CloudFront-Signature	aIHSF3-rNbpyVux6ecBUh64SUS6Jc-I75FJh-4alPkAJYdGC4y0YtrJNkPyNBDnT10JFDOS1XDvpNp209B~siFbL-YA5carBj2baV6R8oAXQ8wUT6IXSDrfYn7K3JBhzs3ejm1n8xlwGCS5mn9t0X32bJHAyp00z~cOIpTh2xll-0qw1M6klSR2kOxHyYWP5AyptrDkdmxG9SxjI4pI60ZRMscsoyuCP-L2e-5C0XcIF0YbZSi3McVtzxrdWW~sFbzUU92ApaqbQ4Wm8OXvk1vIeD-ohmhXe-DbSLPTco2~9nqCrZBtU3PKrDiYLpN-K4kICe8Q3c9Wm2E9byObiQA__
