@@ -1,0 +1,55 @@
+[INFO] --------------------
+Beginning Segmentation
+-------------------- at (2020-01-24 16:47:27,838)
+[INFO] Lectures Downloaded! at (2020-01-24 16:47:27,838)
+[INFO] 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary at (2020-01-24 16:47:27,838)
+[INFO] starting video file thread... at (2020-01-24 16:47:27,838)
+[INFO] Reading Frames at (2020-01-24 16:47:27,839)
+[INFO] started reading frames... at (2020-01-24 16:47:27,861)
+[INFO] Initialising Extracting Data at (2020-01-24 16:47:29,591)
+[INFO] ------------------------------
+Beginning Segmentation at (2020-01-24 16:48:18,863)
+[INFO] Lectures Downloaded! at (2020-01-24 16:48:18,864)
+[INFO] 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary at (2020-01-24 16:48:18,866)
+[INFO] starting video file thread... at (2020-01-24 16:48:18,870)
+[INFO] Reading Frames at (2020-01-24 16:48:18,873)
+[INFO] started reading frames... at (2020-01-24 16:48:18,942)
+[INFO] Initialising Extracting Data at (2020-01-24 16:48:20,792)
+[INFO] ------------------------------
+Beginning Segmentation at (2020-01-24 16:48:30,097)
+[INFO] Lectures Downloaded! at (2020-01-24 16:48:30,097)
+[INFO] 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary at (2020-01-24 16:48:30,097)
+[INFO] starting video file thread... at (2020-01-24 16:48:30,097)
+[INFO] Reading Frames at (2020-01-24 16:48:30,098)
+[INFO] started reading frames... at (2020-01-24 16:48:30,124)
+[INFO] Initialising Extracting Data at (2020-01-24 16:48:31,866)
+[INFO] ------------------------------
+Beginning Segmentation at (2020-01-24 16:49:13,362)
+[INFO] Lectures Downloaded! at (2020-01-24 16:49:13,362)
+[INFO] 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary at (2020-01-24 16:49:13,362)
+[INFO] starting video file thread... at (2020-01-24 16:49:13,362)
+[INFO] Reading Frames at (2020-01-24 16:49:13,362)
+[INFO] started reading frames... at (2020-01-24 16:49:13,385)
+[INFO] Initialising Extracting Data at (2020-01-24 16:49:15,125)
+[INFO] ------------------------------
+Beginning Segmentation at (2020-01-24 16:50:50,639)
+[INFO] Lectures Downloaded! at (2020-01-24 16:50:50,640)
+[INFO] 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary at (2020-01-24 16:50:50,640)
+[INFO] starting video file thread... at (2020-01-24 16:50:50,640)
+[INFO] Reading Frames at (2020-01-24 16:50:50,640)
+[INFO] started reading frames... at (2020-01-24 16:50:50,663)
+[INFO] Initialising Extracting Data at (2020-01-24 16:50:52,410)
+[INFO] Initiaiting shutdown on read thread at (2020-01-24 17:01:59,339)
+[INFO] elasped time: 672.65 at (2020-01-24 17:02:03,291)
+[INFO] time taken: 670.874372959137 at (2020-01-24 17:02:03,291)
+[INFO] approx. FPS: 0.00 at (2020-01-24 17:02:03,292)
+[INFO] Final Time Stamp Dictionary: {'SCEE08007 1': 18150, 'SCEE08007 2': 19380} at (2020-01-24 17:02:03,292)
+[INFO] Time Array: [605, 646, 657] at (2020-01-24 17:02:03,292)
+[INFO] Creating Sub Clips... at (2020-01-24 17:02:03,292)
+[INFO] Creating Sub Clips... at (2020-01-24 17:04:57,699)
+[INFO] Final Time Stamp Dictionary: {} at (2020-01-24 17:04:57,699)

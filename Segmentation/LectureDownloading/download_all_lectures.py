@@ -92,6 +92,7 @@ def _getEnrollments():
         terms = jd["data"][0]["termsById"]
         return (courses,terms)
     except:
+        logger.error("Error. Could not access signed-in Echo360. Make sure you have up-to-date cookies in 'cookies.txt'")
         _printlog("Error. Could not access signed-in Echo360.")
         _printlog("Make sure you have up-to-date cookies in 'cookies.txt'")
         raise SystemExit
@@ -157,6 +158,7 @@ def _downloadHQ(medias,date_time,video_type,courseCode,year_active):
 # downlaod the video and creates the appropriate files
 def _downloadResource(url,date_time,video_type,courseCode,year_active):
     _printlog("Downloading resource: %s" % (year_active + "/" + courseCode + "/" + date_time + "/" + video_type))
+    logger.info("Downloading resource: %s" % (year_active + "/" + courseCode + "/" + date_time + "/" + video_type))
     video_path = os.path.join(DOWNLOADED_VIDEOS_PATH,year_active,courseCode,date_time,video_type)
 
     csv_file_name = "{}.csv".format(courseCode)
@@ -171,6 +173,7 @@ def _downloadResource(url,date_time,video_type,courseCode,year_active):
 
     response = requests.get(url, cookies=cook, stream=True)
     if "html" in response.headers.get("content-type"):
+        logger.error("A html file is where a binary file (video or slides) should be. This probably means the cookies in 'cookies.txt' need updating.")
         _printlog("A html file is where a binary file (video or slides) should be.")
         _printlog("This probably means the cookies in 'cookies.txt' need updating.")
         raise SystemExit
@@ -217,6 +220,5 @@ def begin():
             downloadCourse(course,courseTerm)
     
     logger.info("Duo Videos: {}".format(duo_videos))
-    #return to_segment_videos
+    return duo_videos
 
-begin()

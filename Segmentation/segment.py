@@ -32,12 +32,13 @@ def upload_video(video_dir):
 
 # the main operation
 def main():
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.INFO)
+    logger.info(30*"-" + "\nBeginning Segmentation")
     # download and get all the videos to segment
-    # duo_videos = download_lectures()
+    #duo_videos = download_lectures()
 
     # testing the qr video we made
-    test_video = Video("SCEE08007","2019-2020","2020-01-17T12:00Z","secondary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/test_videos/test_QR_13s.mp4")
+    test_video = Video("SCEE08007","2019-2020","2020-01-17T12:00Z","secondary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/test_videos/James_Hopgood_Lecture_Trim.mp4")
     duo_videos = [ [test_video, None],[None,None] ]
     logger.info("Lectures Downloaded!")
 
@@ -54,7 +55,7 @@ def main():
             if (video == None):
                 logger.debug("Video is None... ignoring".format())    
             else:
-                logger.info("Segmenting Videos {}".format(video))
+                logger.info("\nSegmenting Video {}".format(video))
                 logger.debug("In for loop, about to segment {}".format(video.code))
                 segmented_video_path = os.path.join(VIDEO_DIRECTORY,video.code)
                 # make the folder if it doesnt exist

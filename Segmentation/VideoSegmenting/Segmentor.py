@@ -57,8 +57,8 @@ class Segmentor(object):
         # save the video of the video we are segmenting
         self.video = video
         # we are encoding the data via its course_code index, thus use CourseCodeVerifier
-            #self.verifier = CourseCodeVerifier(video)
-        self.verifier = TopicVerifier(video)
+        self.verifier = CourseCodeVerifier(video)
+        # self.verifier = TopicVerifier(video)
         # start the FPS timer
         self.fps = FPS().start()
         # better to get exact frame rate from cv2 but seems to break this code/tesseract

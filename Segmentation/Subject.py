@@ -31,7 +31,7 @@ class Subject_List(object):
             self.subject_set.add(temp_subject)
 
     def __repr__(self):
-        Subject_List_print = 40*'-'+'\n'
+        Subject_List_print = '\n'+40*'-'+'\n'
         for subject in self.subject_set:
             Subject_List_print += str(subject)+'\n'
         return Subject_List_print
@@ -71,15 +71,15 @@ class Subject(object):
         self.organizer = organizer
 
     def __repr__(self):
-        Subject_details = 'name: {}\ncode: {}\nyear: {}\norganizer: {}'\
+        Subject_details = '\nname: {}\ncode: {}\nyear: {}\norganizer: {}\n'\
             .format(self.name,self.code,self.year,self.organizer)\
-            +'\n'+40*'-'
+            
         return(Subject_details)
 
     def __str__(self):
-        Subject_details = 'name: {}\ncode: {}\nyear: {}\norganizer: {}'\
+        Subject_details = '\nname: {}\ncode: {}\nyear: {}\norganizer: {}\n'\
             .format(self.name,self.code,self.year,self.organizer)\
-            +'\n'+40*'-'
+            
         return(Subject_details)
 
     def __key(self):
