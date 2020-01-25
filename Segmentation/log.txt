@@ -200,3 +200,10 @@ Downloading course: SCEE08007 (SCEE08007)
 Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
 Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
 Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/secondary.mp4

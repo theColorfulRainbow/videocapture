@@ -32,7 +32,7 @@ def upload_video(video_dir):
 
 # the main operation
 def main():
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
     logger.info(30*"-" + "\nBeginning Segmentation")
     # download and get all the videos to segment
     #duo_videos = download_lectures()
@@ -67,10 +67,11 @@ def main():
                 frame_stamp = segment(video.get_video_path(), segmented_video_path, video)
                 frame_stamps.append(frame_stamp)
                 logger.debug("Appending Frame stamp {}".format(frame_stamps))
-        # deal with time_stamps
-        combined_frame_stamp = combine_frame_stamps(frame_stamps)
+        
         # check that both videos have same number of frames and frame_rate
         if (videos[0] != None):
+            # deal with time_stamps
+            combined_frame_stamp = combine_frame_stamps(frame_stamps)
             time_array = frame_number_to_time(combined_frame_stamp, videos[0].number_of_frames, videos[0].fps)
             logger.info("Time Array: {}".format(time_array))
             # create the sub clips

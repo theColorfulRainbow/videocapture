@@ -53,3 +53,76 @@ Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary at (2
 [INFO] Creating Sub Clips... at (2020-01-24 17:02:03,292)
 [INFO] Creating Sub Clips... at (2020-01-24 17:04:57,699)
 [INFO] Final Time Stamp Dictionary: {} at (2020-01-24 17:04:57,699)
+[INFO] ------------------------------
+Beginning Segmentation at (2020-01-24 17:10:26,803)
+[INFO] Downloading Lectures... at (2020-01-24 17:10:26,803)
+[INFO] Courses Participating: {
+name: Signals and Communications 2
+code: SCEE08007
+year: 2019-2020
+organizer: James Hopgood
+} at (2020-01-24 17:10:27,079)
+[INFO] Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4 at (2020-01-24 17:10:27,369)
+[INFO] Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4 at (2020-01-24 17:10:27,379)
+[INFO] Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4 at (2020-01-24 17:10:27,390)
+[INFO] Successfully Downloaded: SCEE08007 with date and time: 2020-01-17T11.10.00.000Z primary at (2020-01-24 17:10:37,430)
+[INFO] Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4 at (2020-01-24 17:10:37,432)
+[INFO] Successfully Downloaded: SCEE08007 with date and time: 2020-01-17T11.10.00.000Z secondary at (2020-01-24 17:10:42,778)
+[INFO] Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/primary.mp4 at (2020-01-24 17:10:42,780)
+[INFO] Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/secondary.mp4 at (2020-01-24 17:10:42,783)
+[INFO] Duo Videos: [[SCEE08007 with date and time: 2020-01-17T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-17T11.10.00.000Z secondary]] at (2020-01-24 17:10:42,785)
+[INFO] Lectures Downloaded! at (2020-01-24 17:10:42,785)
+[INFO] 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T11.10.00.000Z primary at (2020-01-24 17:10:42,785)
+[INFO] starting video file thread... at (2020-01-24 17:10:42,786)
+[INFO] Reading Frames at (2020-01-24 17:10:42,786)
+[INFO] started reading frames... at (2020-01-24 17:10:42,836)
+[INFO] Initialising Extracting Data at (2020-01-24 17:10:44,582)
+[INFO] Initiaiting shutdown on read thread at (2020-01-24 18:11:22,459)
+[INFO] elasped time: 3644.25 at (2020-01-24 18:11:27,039)
+[INFO] time taken: 3642.450377702713 at (2020-01-24 18:11:27,040)
+[INFO] approx. FPS: 0.00 at (2020-01-24 18:11:27,040)
+[INFO] 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T11.10.00.000Z secondary at (2020-01-24 18:11:27,040)
+[INFO] starting video file thread... at (2020-01-24 18:11:27,041)
+[INFO] Reading Frames at (2020-01-24 18:11:27,041)
+[INFO] started reading frames... at (2020-01-24 18:11:27,080)
+[INFO] Initialising Extracting Data at (2020-01-24 18:11:28,840)
+[INFO] Initiaiting shutdown on read thread at (2020-01-24 19:02:38,867)
+[INFO] elasped time: 3077.48 at (2020-01-24 19:02:44,522)
+[INFO] time taken: 3075.6761009693146 at (2020-01-24 19:02:44,524)
+[INFO] approx. FPS: 0.00 at (2020-01-24 19:02:44,525)
+[INFO] Final Time Stamp Dictionary: {'SCEE08007 1': 19943, 'SCEE08007 2': 65343, 'SCEE08007 3': 39187, 'SCEE08007 4': 57795} at (2020-01-24 19:02:44,526)
+[INFO] Time Array: [665, 2179, 1307, 1928, 3013] at (2020-01-24 19:02:44,527)
+[INFO] Creating Sub Clips... at (2020-01-24 19:02:44,527)
+[INFO] ------------------------------
+Beginning Segmentation at (2020-01-25 19:09:40,676)
+[INFO] Lectures Downloaded! at (2020-01-25 19:09:40,678)
+[INFO] 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary at (2020-01-25 19:09:40,678)
+[INFO] starting video file thread... at (2020-01-25 19:09:40,679)
+[INFO] Reading Frames at (2020-01-25 19:09:40,679)
+[INFO] started reading frames... at (2020-01-25 19:09:41,316)
+[INFO] Initialising Extracting Data at (2020-01-25 19:09:43,027)
+[INFO] Initiaiting shutdown on read thread at (2020-01-25 19:21:21,713)
+[INFO] elasped time: 705.47 at (2020-01-25 19:21:26,151)
+[INFO] time taken: 703.1175992488861 at (2020-01-25 19:21:26,151)
+[INFO] approx. FPS: 0.00 at (2020-01-25 19:21:26,151)
+[INFO] Final Time Stamp Dictionary: {'SCEE08007 1': 18150, 'SCEE08007 2': 19380} at (2020-01-25 19:21:26,151)
+[INFO] Valid Dictionary: {'SCEE08007 1': 18150, 'SCEE08007 2': 19380} at (2020-01-25 19:21:26,152)
+[INFO] Times Array: [605, 646, 657] at (2020-01-25 19:21:26,152)
+[INFO] Time Array: [605, 646, 657] at (2020-01-25 19:21:26,152)
+[INFO] Creating Sub Clips... at (2020-01-25 19:21:26,152)
+[INFO] clip_duration: 657.43
+times_array: [605, 646, 657] at (2020-01-25 19:21:26,762)
+[ERROR] Trying to Segent video where this time: 605 is less than previous segmented time: 0 at (2020-01-25 19:21:26,762)
+NoneType: None
+[INFO] ------------------------------
+Beginning Segmentation at (2020-01-25 19:24:17,749)
+[INFO] Lectures Downloaded! at (2020-01-25 19:24:17,750)
+[INFO] 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary at (2020-01-25 19:24:17,750)
+[INFO] starting video file thread... at (2020-01-25 19:24:17,750)
+[INFO] Reading Frames at (2020-01-25 19:24:17,750)
+[INFO] started reading frames... at (2020-01-25 19:24:17,776)
+[INFO] Initialising Extracting Data at (2020-01-25 19:24:19,571)
