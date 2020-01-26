@@ -34,23 +34,25 @@ class Segmentor(object):
     logger = logging.getLogger("Logger")
 
 
-    def __init__(self, video_dir, sub_clip_dir, video):
+    def __init__(self, video_dir, sub_clip_dir, video, threshold_frame=120):
         # self.logger.setLevel(logging.DEBUG)                  # change level depending on what you want to see
         self.logger.info("starting video file thread...")
 
         # replace with something else, like reading a csv file
         self.COURSE_ID_LIST = ['Signals and Communications 2','Signals and Communications 3','Digital Signal Analysis 4','Software Design and Modelling']
 
-        self.initialise_variables(video_dir, sub_clip_dir, video)
+        self.initialise_variables(video_dir, sub_clip_dir, video, frame_threshold)
         # start reading frames
         self.initialise_reading_frames(self.video_dir, self.id_extractor)
         # start extracting data from frames
         self.initialise_extracting_data(self.fvrf, self.id_extractor)
 
 
-    def initialise_variables(self, video_dir, sub_clip_dir, video):
+    def initialise_variables(self, video_dir, sub_clip_dir, video, frame_threshold):
         self.logger.debug("Initialising Variables...")
         self.dictionary_frame_data = {}
+        # used to store the start frame of a QR code
+        self.dictionary_start_frame_data = {}   
         self.video_dir = video_dir
         # We are using the QR decoding procedure
         self.id_extractor = ExtractIDDataQR()
@@ -64,6 +66,7 @@ class Segmentor(object):
         # better to get exact frame rate from cv2 but seems to break this code/tesseract
         self.frame_rate = 29.975#self.get_frame_rate(video_dir)
         self.sub_clip_dir = sub_clip_dir
+        self.THRESHOLD_FRAME = frame_threshold  # ~4s
         self.logger.debug("Initialise Variables Successfully")
 
     def initialise_reading_frames(self, video_dir, id_extractor):
@@ -101,25 +104,21 @@ class Segmentor(object):
                 # self.logger.debug("Data not verified")
                 return
 
-            key_data = data
+            key_data = self.verifier.get_data_index(data)
+            #check if topic number already in dictionary, if not then add it
             if (key_data in self.dictionary_frame_data):
-                self.logger.debug("Key data already in frame data dictionary")
+                self.logger.debug("Key data ({}) already in frame data dictionary".format(key_data))
                 saved_frame_number = self.dictionary_frame_data[key_data]
                 if (saved_frame_number < frame_number):
                     # need to add conditional so that it if we see QR code 10 mins after previously seen, we ignore it
                     # if ( (saved_frame_number < frame_number) and (frame_number - saved_frame_number < 30000) ):
                     self.dictionary_frame_data[key_data] = frame_number
-                    self.logger.debug("Updated frame data dictionary with new index {} vs old index {}".format(frame_number, saved_frame_number))
+                    self.logger.debug("Updated frame data ({}) dictionary with new index {} vs old index {}".format(key_data, frame_number, saved_frame_number))
             else:
-                self.logger.debug("Key data not in frame data dictionary, adding entry now...")
+                self.logger.info("Key data ({}) not in frame data dictionary, adding entry now...".format(key_data))
                 self.dictionary_frame_data[key_data] = frame_number
-            # update the dictionary
-            # if data in self.dictionary_frame_data:
-            #     saved_frame_number = self.dictionary_frame_data[data]
-            #     if saved_frame_number < frame_number:
-            #         self.dictionary_frame_data[data] = frame_number
-            # else:
-            #     self.dictionary_frame_data[data] = frame_number
+                # enter 
+                self.dictionary_start_frame_data[key_data] = frame_number
         # only one thread can execute code there
         finally:
             self.lock.release() #release lock
@@ -142,17 +141,6 @@ class Segmentor(object):
         self.time_finish = time.time()
         frame_stamp = self.stop()
         return frame_stamp
-    # doesnt work 
-    # def _get_frame_rate(self,clip):
-    #     self.logger.debug("Getting frame rate...")
-    #     moviepy_clip = VideoFileClip(clip)
-    #     cap = cv2.VideoCapture(clip)
-    #     length = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    #     clip_fps = length/moviepy_clip.duration
-    #     cap.release()
-    #     del moviepy_clip
-    #     del cap
-    #     return clip_fps
 
     # most updated!!
     def _frame_number_to_time(self, dictionary):
@@ -213,6 +201,17 @@ class Segmentor(object):
         self.logger.debug("Creating sub clips...")
         Sub_Clip.create_subClips(self.video_dir, self.sub_clip_dir, times_array, course_name)
 
+    # returns the dictionary for topic numbers which appear for longer than THRESHOLD_FRAME (4s)
+    def _get_valid_threshold_frame_dictionary(self, dictionary_frame_start, dictionary_frame_end):
+        for topic_number, frame_start in dictionary_frame_start.items():
+            # should exist but maybe error during debugging since frame_end_dict not properly updated
+            frame_end = dictionary_frame_end[topic_number]
+            if (frame_end < frame_start + self.THRESHOLD_FRAME):
+                # remove topic number from dictionary
+                del dictionary_frame_end[topic_number]
+        return dictionary_frame_end
+
+    # ends the Segmentation
     def stop(self):
         # stop the timer and display FPS information
         self.fps.stop()
@@ -221,45 +220,18 @@ class Segmentor(object):
         self.logger.info("elasped time: {:.2f}".format(self.fps.elapsed()))
         self.logger.info("time taken: {}".format(self.time_finish-self.time_start))
         self.logger.info("approx. FPS: {:.2f}".format(self.fps.fps()))
-        # do a bit of cleanup
-        # cv2.destroyAllWindows()
-
-        # print ('-' * 60)
-        # self.logger.info(self.dictionary_frame_data)
-        # print ('-' * 60)
-
-        # make sure the dictionary is in ascending order, with no skips else raise exception
-        # ordered_dictionary = self._orderDictionary(self.dictionary_frame_data)
-        # print ('-' * 60)
-        # self.logger.info("Ordered Dictionary: {}".format(ordered_dictionary))
-        # self.logger.info("Key Data -> frame number dictionary: {}".format(self.dictionary_frame_data))
-        # print ('-' * 60)
-
-        # make sure there are no skips in the topic numbers
-
         # convert frame_numbers in dictionary to time in video
         times_array = self._frame_number_to_time(self.dictionary_frame_data)
 
-        # print ('-' * 60)
-        # self.logger.info("Time Array: {}".format(times_array))
-        # print ('-' * 60)
-        # video_name = self.video.get_video_name()
         # pass times as list to sub_clips.py
-        # self._create_sub_clips(self.video_dir, self.sub_clip_dir, times_array, video_name)
         self.video.set_time_array(times_array)
         self.video.set_topic_frame_dict(self.dictionary_frame_data)
         self.video.set_number_of_frames(self.fvrf.frame_number)
+        # remove topic numbers which have only appeared for less than THRESHOLD_FRAME
+        self.dictionary_frame_data = self._get_valid_threshold_frame_dictionary(self.dictionary_start_frame_data, self.dictionary_frame_data)
         # self.logger.debug("Frame Stamp Ordered Dictionary: {}".format(ordered_dictionary))
         return (self.dictionary_frame_data)
 
 if __name__ == "__main__":
     cwd = os.getcwd()
     video_dir_SDM_13 = 'SDM_13.5min_Trim.mp4'
-    # trimed Video
-    # timings_class = GetTimings('C:\\Users\\ilieg\\Desktop\\Scripts\\videcapture-master_summer\\Lecture Downloading\\2017-2018\\SCEE08007\\2019-08-02T14.09.00.000Z\\primary.mp4',cwd)
-    timings_class = GetTimings(video_dir_SDM_13,cwd)
-    # full video
-    # timings_class = GetTimings('C:\\Users\\Gabi\\Desktop\\Ilie\\videcapture-master\\Testing\\small_video_tst_25s.mp4',cwd)
-    # Visualizer video --- can only be detected using SSIM (get_SSIM_topic_number)
-    # timings_class = GetTimings('C:\\Users\\Gabi\\Desktop\\Ilie\\videcapture-master\\Lecture Downloading\\2017-2018\\SCEE08007\\2019-08-02T14.09.00.000Z\\Visualizer.mp4',cwd)
-    timings_class.start()

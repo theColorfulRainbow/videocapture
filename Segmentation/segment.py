@@ -5,7 +5,7 @@ import time
 import logging
 from Video import Video
 from download_all_lectures import begin as download_lecture
-from config import VIDEO_DIRECTORY, COURSE_CSV_FILE
+from config import VIDEO_DIRECTORY, COURSE_CSV_FILE, THRESHOLD_FRAME
 from Sub_Clip import combine_frame_stamps, frame_number_to_time, create_subClips
 
 logger = logging.getLogger("Logger")
@@ -16,7 +16,7 @@ current_dir = os.path.dirname(os.path.realpath(__file__))
 def segment(video_path, segmented_video_path, subject):
     logger.debug("Segmenting with video_path: {}, segmented video_path: {}, subject: {}".format(video_path, segmented_video_path, subject.code))
     # intialise segmentor
-    my_Segmentor = Segmentor(video_path,segmented_video_path, subject)
+    my_Segmentor = Segmentor(video_path,segmented_video_path, subject, threshold_frame=THRESHOLD_FRAME)
     # time_array should also be set in the Video object itself
     frame_stamps = my_Segmentor.start()
     return frame_stamps
@@ -48,8 +48,8 @@ def main():
         exit()
 
     # segment each video
-    for videos in duo_videos:
         frame_stamps = []
+    for videos in duo_videos:
         for video in videos:
             # check if primary video is null
             if (video == None):
@@ -71,6 +71,7 @@ def main():
         # check that both videos have same number of frames and frame_rate
         if (videos[0] != None):
             # deal with time_stamps
+            logger.info("Raw Frame Stamp Dictionaries: {}".format(frame_stamps))
             combined_frame_stamp = combine_frame_stamps(frame_stamps)
             time_array = frame_number_to_time(combined_frame_stamp, videos[0].number_of_frames, videos[0].fps)
             logger.info("Time Array: {}".format(time_array))
@@ -78,7 +79,8 @@ def main():
             for video in videos:
                 logger.info("Creating Sub Clips...")
                 if (video != None):
-                    create_subClips(video.get_video_path(), segmented_video_path, time_array, video.get_video_name())
+                    # sub_directory = os.path.join(segmented_video_path,Video.date_time,Video.video_type)
+                    create_subClips(video.get_video_path(), video.get_destination_directory(), time_array, video.get_video_name())
         # upload the segmented video to media hopper create
         # upload_video(segmented_video_path)
 

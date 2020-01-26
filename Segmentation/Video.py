@@ -1,3 +1,5 @@
+from config import VIDEO_DIRECTORY
+import os
 
 " used to contain information about a course we have downloaded and are to segment"
 class Video(object):
@@ -11,6 +13,8 @@ class Video(object):
         self.year       = year_active
         self.video_type = video_type
         self.path       = video_path
+        # --------------------------
+        self.dest_dir = os.path.join(VIDEO_DIRECTORY, self.code, self.year, self.date_time)
         self.time_array = []
         self.topic_frame_dict = {}
         self.number_of_frames = -1
@@ -41,6 +45,9 @@ class Video(object):
 
     def set_frame_rate(self, frame_rate):
         self.fps = frame_rate
+
+    def get_destination_directory(self):
+        return self.dest_dir
 
 # returns true if the videos are from the same lecture,
 # i.e they have same code, year, date and time

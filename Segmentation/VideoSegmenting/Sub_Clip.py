@@ -8,6 +8,7 @@ import os
 import math
 from moviepy.editor import *
 import logging
+from config import VIDEO_DIRECTORY
 # import MasterEnvironemnt.Logger 
 logger = logging.getLogger("Logger")
 
@@ -36,9 +37,16 @@ def create_subClips(movie,destination_directory,times_array,course_name):
             sub_clip = clip.subclip(last_time, time)
             sub_clip_array.append(sub_clip)
             last_time = time
+
     # save the sub clips to a directory
     for i in range(len(sub_clip_array)):
-        topic_name = "Topic_{}_{}.mp4".format(i,course_name)
+        logger.info("Saving segmented videos")
+        # check if sub-folder for date-time exists
+        if (not os.path.isdir(destination_directory)):
+            logger.info("Creating Directory: {}".format(destination_directory))
+            os.mkdir(destination_directory)
+
+        topic_name = "Topic_{}.mp4".format(i)
         name = os.path.join(destination_directory,topic_name)
         sub_clip_array[i].write_videofile(name)
         logger.info("Saving Video: {}".format(name))
@@ -52,8 +60,8 @@ def combine_frame_stamps(topic_frame_dicts):
             if (key in finale_frame_stamp):
                 # check if the frame number is greater than the stored frame number
                 stored_frame = finale_frame_stamp[key]
-                if (value < stored_frame):
-                    finale_frame_stamp[key] = stored_frame
+                if (value > stored_frame):
+                    finale_frame_stamp[key] = value
                     logger.debug("Updated Final Time Stamp Dictionary from ({}) vs ({})".format(stored_frame,value))
             else:
                 finale_frame_stamp[key] = value
@@ -70,9 +78,11 @@ def combine_frame_stamps(topic_frame_dicts):
 # creates a dictionary where the topic number with lowest frame count is '1st' and all others are in ascending order 
 def create_valid_dictionary(dictionary):
     logger.debug("Creating valid dictionary")
-
-    lowest_topic_num = min(dictionary, key=dictionary.get)
-    lowest_frame_num = dictionary.get(lowest_topic_num)
+    try:
+        lowest_topic_num = min(dictionary, key=dictionary.get)
+        lowest_frame_num = dictionary.get(lowest_topic_num)
+    except:
+        return dictionary
     # convert dictionary to list of tuples
     topic_frame_list = list(dictionary.items()) #[ (topic_num, frame_num)] -> [(1,300),(2,450)]
     topic_frame_list = sorted(topic_frame_list, key=lambda tup: tup[0]) # tup 0 because we are sorting by topic num
@@ -112,17 +122,20 @@ def create_valid_dictionary(dictionary):
 def frame_number_to_time(dictionary, frame_number, frame_rate):
     logger.debug("Getting frame number to time...")
     times_array = list()
+    try: 
+        topic_frame_list = list(dictionary.items()) #[ (topic_num, frame_num)] -> [(1,300),(2,450)]
+        topic_frame_list = sorted(topic_frame_list, key=lambda tup: tup[0])
 
-    topic_frame_list = list(dictionary.items()) #[ (topic_num, frame_num)] -> [(1,300),(2,450)]
-    topic_frame_list = sorted(topic_frame_list, key=lambda tup: tup[0])
-
-    # generate times and add them to the array
-    for topic_frame in topic_frame_list:
-        topic_num = topic_frame[0]
-        frame_num = topic_frame[1]
-        time = math.floor(_convert_frame_num_to_time(frame_number=frame_num, frame_rate=frame_rate))
-        times_array.append(time)
-        logger.debug("Topic Entry: ({}:{}) -> ({})s".format(topic_num, frame_num, time))
+        # generate times and add them to the array
+        for topic_frame in topic_frame_list:
+            topic_num = topic_frame[0]
+            frame_num = topic_frame[1]
+            time = math.floor(_convert_frame_num_to_time(frame_number=frame_num, frame_rate=frame_rate))
+            times_array.append(time)
+            logger.debug("Topic Entry: ({}:{}) -> ({})s".format(topic_num, frame_num, time))
+    except:
+        pass
+    
 
     # check if the last fraame is in times array, if not then add it
     last_frame_time = math.floor(_convert_frame_num_to_time( frame_number=frame_number, frame_rate=frame_rate))

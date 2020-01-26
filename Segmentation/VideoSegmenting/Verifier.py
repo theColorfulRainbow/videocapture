@@ -45,8 +45,8 @@ class CourseCodeVerifier(Verifier):
             self.verified = False
             self.logger.debug("Data is not Verified!")
             return False
-
-    def _extact_data_index(self, data):
+    
+    def _extract_data_index(self, data):
         # -- Example --
         # data = "PCEh78ER i" -> where 'PCEh78ER' is the course code and 'i' is the index
         # we want the index ('i')
