@@ -1,5 +1,5 @@
 import unittest
-# from __init__ import combine_frame_stamps
+from __init__ import combine_frame_stamps
 
 # list_dicts = [{'1':10,},{'2':20}]
 #

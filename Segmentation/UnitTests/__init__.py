@@ -7,11 +7,20 @@ sys.path.append(information_dir)
 sys.path.append(kaltura_dir)
 sys.path.append(unitTest_dir)
 
+sys.path.append(test_videos_dir)
+sys.path.append(test_videos_scenario_perfect_dir)
+sys.path.append(test_videos_scenario_secondary_empty)
+sys.path.append(test_videos_scenario_topics_behind)
+
 from Logger import logger
 import logging
 from Subject import Subject, Subject_List
 from Video import Video
 from VideoSegmenting.Sub_Clip import combine_frame_stamps
+from Video import Video
+import logging
+logger = logging.getLogger("Logger")
+from segment import start
 
 # DEBUG
 # logger.setLevel(logging.DEBUG)

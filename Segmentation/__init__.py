@@ -11,8 +11,3 @@ import logging
 from Subject import Subject, Subject_List
 from Video import Video
 from VideoSegmenting.Segmentor import Segmentor
-
-# DEBUG
-# logger.setLevel(logging.DEBUG)
-# logger.debug("Hello init Master")
-# logger.debug('{}\n{}'.format(VIDEO_DIRECTORY,COURSE_CSV_FILE))

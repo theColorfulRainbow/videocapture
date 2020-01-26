@@ -46,7 +46,7 @@ def create_subClips(movie,destination_directory,times_array,course_name):
             logger.info("Creating Directory: {}".format(destination_directory))
             os.mkdir(destination_directory)
 
-        topic_name = "Topic_{}.mp4".format(i)
+        topic_name = "{}_topic_{}.mp4".format(course_name, i+1)
         name = os.path.join(destination_directory,topic_name)
         sub_clip_array[i].write_videofile(name)
         logger.info("Saving Video: {}".format(name))
@@ -122,6 +122,7 @@ def create_valid_dictionary(dictionary):
 def frame_number_to_time(dictionary, frame_number, frame_rate):
     logger.debug("Getting frame number to time...")
     times_array = list()
+    # try needed, for empty dictionary then min will fail
     try: 
         topic_frame_list = list(dictionary.items()) #[ (topic_num, frame_num)] -> [(1,300),(2,450)]
         topic_frame_list = sorted(topic_frame_list, key=lambda tup: tup[0])
@@ -135,7 +136,6 @@ def frame_number_to_time(dictionary, frame_number, frame_rate):
             logger.debug("Topic Entry: ({}:{}) -> ({})s".format(topic_num, frame_num, time))
     except:
         pass
-    
 
     # check if the last fraame is in times array, if not then add it
     last_frame_time = math.floor(_convert_frame_num_to_time( frame_number=frame_number, frame_rate=frame_rate))

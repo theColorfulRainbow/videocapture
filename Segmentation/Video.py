@@ -14,7 +14,7 @@ class Video(object):
         self.video_type = video_type
         self.path       = video_path
         # --------------------------
-        self.dest_dir = os.path.join(VIDEO_DIRECTORY, self.code, self.year, self.date_time)
+        self.dest_dir = self._get_destination_directory()
         self.time_array = []
         self.topic_frame_dict = {}
         self.number_of_frames = -1
@@ -24,6 +24,12 @@ class Video(object):
     def __repr__(self):
         represntation = "{} with date and time: {} {}".format(self.code, self.date_time, self.video_type.split(".")[0])
         return represntation
+
+    def _get_destination_directory(self):
+        datetime = self.date_time.replace("-","_")
+        datetime = datetime.replace(".","_")
+        vid_type = self.video_type.replace(".","_") 
+        return os.path.join(VIDEO_DIRECTORY, self.code, self.year, datetime, vid_type) 
 
     def get_video_name(self):
         datetime = self.date_time.replace("-","_")

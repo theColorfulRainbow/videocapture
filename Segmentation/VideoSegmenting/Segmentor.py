@@ -41,7 +41,7 @@ class Segmentor(object):
         # replace with something else, like reading a csv file
         self.COURSE_ID_LIST = ['Signals and Communications 2','Signals and Communications 3','Digital Signal Analysis 4','Software Design and Modelling']
 
-        self.initialise_variables(video_dir, sub_clip_dir, video, frame_threshold)
+        self.initialise_variables(video_dir, sub_clip_dir, video, threshold_frame)
         # start reading frames
         self.initialise_reading_frames(self.video_dir, self.id_extractor)
         # start extracting data from frames
