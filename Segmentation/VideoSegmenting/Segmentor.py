@@ -115,7 +115,7 @@ class Segmentor(object):
                     self.dictionary_frame_data[key_data] = frame_number
                     self.logger.debug("Updated frame data ({}) dictionary with new index {} vs old index {}".format(key_data, frame_number, saved_frame_number))
             else:
-                self.logger.info("Key data ({}) not in frame data dictionary, adding entry now...".format(key_data))
+                self.logger.info("Key data ({}:{}) not in frame data dictionary, adding entry now...".format(key_data,frame_number))
                 self.dictionary_frame_data[key_data] = frame_number
                 # enter 
                 self.dictionary_start_frame_data[key_data] = frame_number
@@ -203,11 +203,13 @@ class Segmentor(object):
 
     # returns the dictionary for topic numbers which appear for longer than THRESHOLD_FRAME (4s)
     def _get_valid_threshold_frame_dictionary(self, dictionary_frame_start, dictionary_frame_end):
+        self.logger.info("Cretaing valid threshold dictionary")
         for topic_number, frame_start in dictionary_frame_start.items():
             # should exist but maybe error during debugging since frame_end_dict not properly updated
             frame_end = dictionary_frame_end[topic_number]
             if (frame_end < frame_start + self.THRESHOLD_FRAME):
                 # remove topic number from dictionary
+                self.logger.info("Topic {} seen first at frame {} and last seen at frame {}, the difference is below threshold {}. Removing!".format(topic_number, frame_start, frame_end, self.THRESHOLD_FRAME))
                 del dictionary_frame_end[topic_number]
         return dictionary_frame_end
 
