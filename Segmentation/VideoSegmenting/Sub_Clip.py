@@ -141,7 +141,7 @@ def frame_number_to_time(dictionary, frame_number, frame_rate):
     last_frame_time = math.floor(_convert_frame_num_to_time( frame_number=frame_number, frame_rate=frame_rate))
 
     if not(last_frame_time in times_array):
-        logger.debug("Last frame Time ({}) not in times array, adding now".format(last_frame_time))
+        logger.info("Last frame Time ({}) not in times array, adding now".format(last_frame_time))
         times_array.append(last_frame_time)
 
     logger.info("Times Array: {}".format(times_array))

@@ -48,7 +48,7 @@ class FileVideoReadFrame(object):
                 # if the `grabbed` boolean is `False`, then we have
                 # reached the end of the video file
                 if not grabbed:
-                    # print("stopped")
+                    #self.logger.info("Frame could not be grabbed. exiting Read Frame, total frames read: {}".format(self.counter))
                     self.stop()
                     return
                 # add the frame to the queue
@@ -65,11 +65,6 @@ class FileVideoReadFrame(object):
         self.frame_number += 1
         # return self.Q.get()
         return [frame, self.frame_number]
-
-    def get_time():
-        # return the time of the current frame
-        # doesn't work
-        return self.Q.stream.get(cv2.CAP_PROP_POS_MSEC)
 
     def more(self):
         return (self.Q.qsize() > 0)

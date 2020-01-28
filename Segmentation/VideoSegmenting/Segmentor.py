@@ -34,26 +34,27 @@ class Segmentor(object):
     logger = logging.getLogger("Logger")
 
 
-    def __init__(self, video_dir, sub_clip_dir, video, threshold_frame=120):
+    def __init__(self, video, threshold_frame):
         # self.logger.setLevel(logging.DEBUG)                  # change level depending on what you want to see
         self.logger.info("starting video file thread...")
 
         # replace with something else, like reading a csv file
         self.COURSE_ID_LIST = ['Signals and Communications 2','Signals and Communications 3','Digital Signal Analysis 4','Software Design and Modelling']
 
-        self.initialise_variables(video_dir, sub_clip_dir, video, threshold_frame)
+        self.initialise_variables(video, threshold_frame)
         # start reading frames
         self.initialise_reading_frames(self.video_dir, self.id_extractor)
         # start extracting data from frames
-        self.initialise_extracting_data(self.fvrf, self.id_extractor)
+        #self.initialise_extracting_data(self.fvrf, self.id_extractor)
 
 
-    def initialise_variables(self, video_dir, sub_clip_dir, video, frame_threshold):
+    def initialise_variables(self, video, frame_threshold):
         self.logger.debug("Initialising Variables...")
         self.dictionary_frame_data = {}
         # used to store the start frame of a QR code
         self.dictionary_start_frame_data = {}   
-        self.video_dir = video_dir
+        self.video_dir = video.get_video_path() 
+        self.sub_clip_dir = video.get_destination_directory()
         # We are using the QR decoding procedure
         self.id_extractor = ExtractIDDataQR()
         # save the video of the video we are segmenting
@@ -62,12 +63,10 @@ class Segmentor(object):
         self.verifier = CourseCodeVerifier(video)
         # self.verifier = TopicVerifier(video)
         # start the FPS timer
-        self.fps = FPS().start()
-        # better to get exact frame rate from cv2 but seems to break this code/tesseract
-        self.frame_rate = 29.975#self.get_frame_rate(video_dir)
-        self.sub_clip_dir = sub_clip_dir
+        self.fps = video.get_frame_rate()
         self.THRESHOLD_FRAME = frame_threshold  # ~4s
         self.logger.debug("Initialise Variables Successfully")
+
 
     def initialise_reading_frames(self, video_dir, id_extractor):
         self.logger.info("Reading Frames")
@@ -78,8 +77,11 @@ class Segmentor(object):
             pass
         self.logger.debug("Reading Frames Successful")
 
-    # initialise all the threads to extract the data
-    def initialise_extracting_data(self, fvrf, id_extractor):
+
+    # start all the threads to extract the data
+    def _start_extracting_data(self):
+        fvrf = self.fvrf
+        id_extractor = self.id_extractor
         self.logger.info("Initialising Extracting Data")
         self.lock = Lock()
         self.fvrd = []
@@ -103,7 +105,6 @@ class Segmentor(object):
             if (not (self.verifier.verify(data))):
                 # self.logger.debug("Data not verified")
                 return
-
             key_data = self.verifier.get_data_index(data)
             #check if topic number already in dictionary, if not then add it
             if (key_data in self.dictionary_frame_data):
@@ -129,77 +130,41 @@ class Segmentor(object):
     def start(self):
     # loop over frames from the video file stream
         self.logger.debug("Starting Segmention")
-        converter_del = 0
-        self.fps.update()
-        self.time_start = time.time()
-
+        self._start_extracting_data()
+        # self.fps.update()
+        # self.time_start = time.time()
         # wait until all the frames have been proccessed
         while self.fvrf.more():
             pass
 
         self.logger.debug('Shutting Down... ')
-        self.time_finish = time.time()
+        # self.time_finish = time.time()
         frame_stamp = self.stop()
         return frame_stamp
-
-    # most updated!!
-    def _frame_number_to_time(self, dictionary):
-        self.logger.debug("Getting frame number to time...")
-        times_array = list()
-        for topic in dictionary:
-            time = math.floor(self._convert_frame_num_to_time( frame_number=dictionary[topic], frame_rate=self.frame_rate))
-            times_array.append(time)
-
-        # check if the last fraame is in times array, if not then add it
-        last_frame_time = math.floor(self._convert_frame_num_to_time( frame_number=self.fvrf.frame_number, frame_rate=self.frame_rate))
-        self.logger.debug('dictionary = {}\ntimes_array = {}\nlast frame number = {} last_frame_time={}'.format(dictionary,times_array,self.fvrf.frame_number,last_frame_time))
-
-        if not(last_frame_time in times_array):
-            times_array.append(last_frame_time)
-
-        self.logger.debug('times_array = {}\nlast_frame_time={}'.format(times_array,last_frame_time))
-        return times_array
-
-    # convert a frame number to second
-    def _convert_frame_num_to_time(self, frame_number, frame_rate):
-        self.logger.debug("Converting frame number to time...")
-        return (frame_number/frame_rate)
-
-
-    # orders the dictionary with regartds to the frame number
-    def _orderDictionary(self, dictionary):
-        self.logger.debug("Ordering the Dictionary")
-        ordered_dictionary = sorted(dictionary, key=dictionary.get, reverse=False)
-        return ordered_dictionary
-
-    # returns the course name found in the dictionary keys, should do this in another class
-    def _get_course_name(self,dictionary):
-        self.logger.debug("Getting course name...")
-        text, frame = random.choice(list(dictionary.items()))
-        course_name = ''
-        for course_id in self.COURSE_ID_LIST:
-            if (course_id in text):
-                course_name = course_id
-            else:
-                self.logger.debug('{} not in {}'.format(course_id,text))
-        self.logger.debug('course_name: {}'.format(course_name))
-        return course_name
-
-    # returns the dictionary of text to frame
-    def getDictionary(self):
-        return self.dictionary_frame_data
 
     # shut down all the threads
     def _stop_fvrd(self):
         self.logger.debug("Stopping the File Video Read Data threads...")
         for reader in (self.fvrd):
             reader.stop()
-            reader.stopped = True
+            # reader.stopped = True
+        # wait until all threads have stopped!
+        while True:
+            threads_alive = False
+            for reader in (self.fvrd): 
+                threads_alive = threads_alive & reader.stopped
+                self.logger.debug("Thread Frame Reader ({}), Alive = ({})".format(reader.thread_number, reader.stopped))
+            if (threads_alive == False):
+                break
+
+        self.logger.info("All reader threads stopped, final thread read {}".format(self.fvrf.counter))
+
 
     # creates the sub clips
     def _create_sub_clips(self,video_dir, sub_clip_dir, times_array, course_name):
         self.logger.debug("Creating sub clips...")
         Sub_Clip.create_subClips(self.video_dir, self.sub_clip_dir, times_array, course_name)
+
 
     # returns the dictionary for topic numbers which appear for longer than THRESHOLD_FRAME (4s)
     def _get_valid_threshold_frame_dictionary(self, dictionary_frame_start, dictionary_frame_end):
@@ -213,26 +178,34 @@ class Segmentor(object):
                 del dictionary_frame_end[topic_number]
         return dictionary_frame_end
 
+
     # ends the Segmentation
     def stop(self):
         # stop the timer and display FPS information
-        self.fps.stop()
+        # self.fpsself.fps.stop()
+        self.logger.info("[BEFORE] Videos Number of Frames: {}, Number of Read Frames; {}".format(self.video.get_number_of_frames(),self.fvrf.frame_number ))
+        self.video.set_number_of_frames(self.fvrf.frame_number) #cv2 get frames seems to be a bit iffy and we choose either our 
+                                           #calculated or cv2, choosing our calculated
+        self.logger.info("[AFTER] Videos Number of Frames: {}, Number of Read Frames; {}".format(self.video.get_number_of_frames(),self.fvrf.frame_number ))
         self._stop_fvrd()
 
-        self.logger.info("elasped time: {:.2f}".format(self.fps.elapsed()))
-        self.logger.info("time taken: {}".format(self.time_finish-self.time_start))
-        self.logger.info("approx. FPS: {:.2f}".format(self.fps.fps()))
+        # self.logger.info("elasped time: {:.2f}".format(self.fps.elapsed()))
+        # self.logger.info("time taken: {}".format(self.time_finish-self.time_start))
+        # self.logger.info("approx. FPS: {:.2f}".format(self.fps.fps()))
         # convert frame_numbers in dictionary to time in video
-        times_array = self._frame_number_to_time(self.dictionary_frame_data)
+        # times_array = self._frame_number_to_time(self.dictionary_frame_data)
 
-        # pass times as list to sub_clips.py
-        self.video.set_time_array(times_array)
-        self.video.set_topic_frame_dict(self.dictionary_frame_data)
-        self.video.set_number_of_frames(self.fvrf.frame_number)
+        # # pass times as list to sub_clips.py
+        # self.video.set_time_array(times_array)
+        # self.video.set_topic_frame_dict(self.dictionary_frame_data)
+        # self.video.set_number_of_frames(self.fvrf.frame_number)
         # remove topic numbers which have only appeared for less than THRESHOLD_FRAME
         self.dictionary_frame_data = self._get_valid_threshold_frame_dictionary(self.dictionary_start_frame_data, self.dictionary_frame_data)
+        self.video.frame_stamp = self.dictionary_frame_data
+        
         # self.logger.debug("Frame Stamp Ordered Dictionary: {}".format(ordered_dictionary))
         return (self.dictionary_frame_data)
+
 
 if __name__ == "__main__":
     cwd = os.getcwd()

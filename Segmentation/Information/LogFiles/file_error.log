@@ -1,0 +1,2 @@
+[ERROR] Trying to Segent video where this time: 2930 is less than previous segmented time: 2932 {File: (Sub_Clip.py), Function: (create_subClips), Line: (33), at (2020-01-27 19:51:45,251)}
+NoneType: None

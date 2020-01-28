@@ -1,5 +1,6 @@
 from config import VIDEO_DIRECTORY
 import os
+import cv2
 
 " used to contain information about a course we have downloaded and are to segment"
 class Video(object):
@@ -17,8 +18,9 @@ class Video(object):
         self.dest_dir = self._get_destination_directory()
         self.time_array = []
         self.topic_frame_dict = {}
-        self.number_of_frames = -1
-        self.fps = 29.975
+        self.frame_stamps = {}
+        self.number_of_frames  = self._get_total_frames()    # get total number of frames
+        self.fps = self._get_fps() #set the fps for the video
 
 
     def __repr__(self):
@@ -37,8 +39,20 @@ class Video(object):
         video_name = "{}_{}_{}".format(self.code,datetime,self.video_type.split(".")[0])
         return video_name
 
+    def _get_fps(self):
+        vid = cv2.VideoCapture(self.path)
+        return vid.get(cv2.CAP_PROP_FPS)
+
+    def _get_total_frames(self):
+        cap = cv2.VideoCapture(self.path)
+        length = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        return length
+
     def get_video_path(self):
         return self.path
+
+    def get_total_frames(self):
+        return self.number_of_frames
 
     def set_time_array(self, t_array):
         self.time_array = t_array
@@ -54,6 +68,12 @@ class Video(object):
 
     def get_destination_directory(self):
         return self.dest_dir
+
+    def get_frame_rate(self):
+        return self.fps
+
+    def get_number_of_frames(self):
+        return self.number_of_frames
 
 # returns true if the videos are from the same lecture,
 # i.e they have same code, year, date and time

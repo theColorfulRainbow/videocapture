@@ -15,6 +15,7 @@ class FileVideoReadData(object):
         # used to indicate if the thread should be stopped or not
         self.logger = logging.getLogger("Logger")
         self.stopped = False
+        self.stopping = False
         # the video file
         self.fvrf = fvrf
         self.thread_number = thread_number
@@ -27,6 +28,7 @@ class FileVideoReadData(object):
         t = Thread(target=self.readFrame, args=())
         t.daemon = True
         t.start()
+        t.join()
         return self
 
     def readFrame(self):
@@ -35,7 +37,8 @@ class FileVideoReadData(object):
         while self.fvrf.more():
             # print("in while of read frame")
             # if the thread indicator variable is set, stop the thread
-            if self.stopped:
+            if self.stopping:
+                self.stopped = True
                 return
 
             frame, frame_number = self.fvrf.read() #get frame
@@ -47,8 +50,7 @@ class FileVideoReadData(object):
             # data from id_extractor
             self.main_thread.update_text_dictionary(frame_data,frame_number,frame)
 
-
     # stops reading the frames
     def stop(self):
         # indicate that the thread should be stopped
-        self.stopped = True
+        self.stopping = True

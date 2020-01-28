@@ -15,10 +15,10 @@ logger = logging.getLogger("Logger")
 # GOES BACK TWO times ("+ os.sep + os.pardir" x 2) and goes into Videos folder
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
-def segment(video_path, segmented_video_path, subject, threshold_frame):
-    logger.debug("Segmenting with video_path: {}, segmented video_path: {}, subject: {}, threshold_frame".format(video_path, segmented_video_path, subject.code,threshold_frame))
+def segment(video, threshold_frame):
+    logger.debug("Segmenting Video: {}, threshold_frame: {}".format(video.code,threshold_frame))
     # intialise segmentor
-    my_Segmentor = Segmentor(video_path,segmented_video_path, subject, threshold_frame=threshold_frame)
+    my_Segmentor = Segmentor(video, threshold_frame)
     # time_array should also be set in the Video object itself
     frame_stamps = my_Segmentor.start()
     return frame_stamps
@@ -48,6 +48,7 @@ def start(duo_videos,threshold_frame=THRESHOLD_FRAME):
             else:
                 logger.info("\nSegmenting Video {}".format(video))
                 logger.debug("In for loop, about to segment {}".format(video.code))
+                logger.info("Video has a frame rate of ~{} and total number of frame ~{}".format(video.get_frame_rate(), video.get_total_frames()))
                 # make the folder if it doesnt exist
                 if os.path.isdir(video.get_destination_directory()) == False:
                     # creates parents directory if they dont exist, better than os.mkdir
@@ -55,7 +56,7 @@ def start(duo_videos,threshold_frame=THRESHOLD_FRAME):
 
                 logger.debug("Video: {}".format(video))
                 # segment the video
-                frame_stamp = segment(video.get_video_path(), video.get_destination_directory(), video, threshold_frame)
+                frame_stamp = segment(video, threshold_frame)
                 frame_stamps.append(frame_stamp)
                 logger.debug("Appending Frame stamp {}".format(frame_stamps))
         
@@ -64,6 +65,7 @@ def start(duo_videos,threshold_frame=THRESHOLD_FRAME):
             # deal with time_stamps
             logger.info("Raw Frame Stamp Dictionaries: {}".format(frame_stamps))
             combined_frame_stamp = combine_frame_stamps(frame_stamps)
+            logger.info("Video {}, Frame rate: {}, Total Number of Frames: {}".format(videos[0], videos[0].number_of_frames, videos[0].fps))
             time_array = frame_number_to_time(combined_frame_stamp, videos[0].number_of_frames, videos[0].fps)
 
             logger.info("Time Array: {}".format(time_array))
@@ -82,14 +84,16 @@ def main():
     logger.setLevel(logging.DEBUG)
     logger.info(30*"-" + "\nBeginning Segmentation")
     # download and get all the videos to segment
-    duo_videos = download_lectures()
+    #duo_videos = download_lectures()
 
     # testing the qr video we made
-    test_video = Video("SCEE08007","2019-2020","2020-01-17T12:00Z","secondary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/test_videos/James_Hopgood_Lecture_Trim.mp4")
-    #duo_videos = [ [test_video, None],[None,None] ]
+    test_video_primary = Video("SCEE08007","2019-2020","2020-01-17T12:00Z","secondary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/TestVideos/scenario_4_2_QR_till_end/video_primary.mp4")
+    test_video_secondary = Video("SCEE08007","2019-2020","2020-01-17T12:00Z","primary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/TestVideos/scenario_4_2_QR_till_end/video_secondary.mp4")
+    duo_videos = [[test_video_primary, test_video_secondary]]
     logger.info("Lectures Downloaded!")
-    threshold_frame = THRESHOLD_FRAME
-    start(duo_videos, threshold_frame=THRESHOLD_FRAME)
+    #threshold_frame = THRESHOLD_FRAME
+    threshold_frame = 1
+    start(duo_videos, threshold_frame=threshold_frame)
 
 if (__name__ == "__main__"):
     main()

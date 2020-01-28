@@ -1,0 +1,75 @@
+[INFO]: Running Test: topics_not_ordered
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z primary
+[INFO]: Video has a frame rate of ~29.97002997002997 and total number of frame ~750
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (1:1) not in frame data dictionary, adding entry now...
+[INFO]: Key data (2:131) not in frame data dictionary, adding entry now...
+[INFO]: Key data (3:211) not in frame data dictionary, adding entry now...
+[INFO]: Key data (5:498) not in frame data dictionary, adding entry now...
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: [BEFORE] Videos Number of Frames: 750, Number of Read Frames; 746
+[INFO]: [AFTER] Videos Number of Frames: 746, Number of Read Frames; 746
+[INFO]: All reader threads stopped, final thread read 746
+[INFO]: Cretaing valid threshold dictionary
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary
+[INFO]: Video has a frame rate of ~29.97002997002997 and total number of frame ~750
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (4:336) not in frame data dictionary, adding entry now...
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Key data (6:687) not in frame data dictionary, adding entry now...
+[INFO]: [BEFORE] Videos Number of Frames: 750, Number of Read Frames; 746
+[INFO]: [AFTER] Videos Number of Frames: 746, Number of Read Frames; 746
+[INFO]: All reader threads stopped, final thread read 746
+[INFO]: Cretaing valid threshold dictionary
+[INFO]: Raw Frame Stamp Dictionaries: [{1: 72, 2: 175, 3: 264, 5: 557}, {4: 395, 6: 746}]
+[INFO]: Final Time Stamp Dictionary: {1: 72, 2: 175, 3: 264, 5: 557, 4: 395, 6: 746}
+[INFO]: Valid Dictionary: {1: 72, 2: 175, 3: 264, 4: 395, 5: 557, 6: 746}
+[INFO]: Video SCEE08007 with date and time: 2020-01-17T12:00Z primary, Frame rate: 746, Total Number of Frames: 29.97002997002997
+[INFO]: Times Array: [2, 5, 8, 13, 18, 24]
+[INFO]: Time Array: [2, 5, 8, 13, 18, 24]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 25.03
+times_array: [2, 5, 8, 13, 18, 24]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/primary_mp4/SCEE08007_2020_01_17T12:00Z_primary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/primary_mp4/SCEE08007_2020_01_17T12:00Z_primary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/primary_mp4/SCEE08007_2020_01_17T12:00Z_primary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/primary_mp4/SCEE08007_2020_01_17T12:00Z_primary_topic_4.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/primary_mp4/SCEE08007_2020_01_17T12:00Z_primary_topic_5.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/primary_mp4/SCEE08007_2020_01_17T12:00Z_primary_topic_6.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 25.03
+times_array: [2, 5, 8, 13, 18, 24]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/secondary_mp4/SCEE08007_2020_01_17T12:00Z_secondary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/secondary_mp4/SCEE08007_2020_01_17T12:00Z_secondary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/secondary_mp4/SCEE08007_2020_01_17T12:00Z_secondary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/secondary_mp4/SCEE08007_2020_01_17T12:00Z_secondary_topic_4.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/secondary_mp4/SCEE08007_2020_01_17T12:00Z_secondary_topic_5.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/../Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T12:00Z/secondary_mp4/SCEE08007_2020_01_17T12:00Z_secondary_topic_6.mp4
+[INFO]: Primary Expected (['SCEE08007_2020_01_17T12:00Z_primary_topic_1.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_2.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_3.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_4.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_5.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_6.mp4'])
+vs Actual
+(['SCEE08007_2020_01_17T12:00Z_primary_topic_1.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_2.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_3.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_4.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_5.mp4', 'SCEE08007_2020_01_17T12:00Z_primary_topic_6.mp4'])
+
+[INFO]: Secondary Expected (['SCEE08007_2020_01_17T12:00Z_secondary_topic_1.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_2.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_3.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_4.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_5.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_6.mp4'])
+vs Actual
+(['SCEE08007_2020_01_17T12:00Z_secondary_topic_1.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_2.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_3.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_4.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_5.mp4', 'SCEE08007_2020_01_17T12:00Z_secondary_topic_6.mp4'])
+
