@@ -37,12 +37,16 @@ class CourseCodeVerifier(Verifier):
 
     # check if the data is in the course codes, if not then its not verified
     def _verify_data(self, data):
-        if (self.course_code in data):
-            self.verified = True
-            self.logger.debug("Data is Verified!")
-            return True
-        else:
-            self.verified = False
+        try:
+            if (self.course_code in data):
+                self.verified = True
+                self.logger.debug("Data is Verified!")
+                return True
+            else:
+                self.verified = False
+                self.logger.debug("Data is not Verified!")
+                return False
+        except:
             self.logger.debug("Data is not Verified!")
             return False
     
@@ -51,9 +55,12 @@ class CourseCodeVerifier(Verifier):
         # data = "PCEh78ER i" -> where 'PCEh78ER' is the course code and 'i' is the index
         # we want the index ('i')
         # -------------
-        data_index = data.split(' ', 1)[1]
-        data_index = int(data_index)
-        return data_index
+        try:
+            data_index = data.split(' ', 1)[1]
+            data_index = int(data_index)
+            return data_index
+        except:
+            return -1   #invalid data
 
     # in our case our key data will just be the data in raw format,
     # data = "PCEh78ER i" -> where 'PCEh78ER' is the course code and 'i' is the index

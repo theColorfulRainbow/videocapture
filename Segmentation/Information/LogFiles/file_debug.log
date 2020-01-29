@@ -6,15 +6,31 @@ Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z primary
 [INFO]: Reading Frames
 [INFO]: started reading frames...
 [INFO]: Initialising Extracting Data
-[INFO]: Key data (1:1) not in frame data dictionary, adding entry now...
-[INFO]: Key data (2:131) not in frame data dictionary, adding entry now...
-[INFO]: Key data (3:211) not in frame data dictionary, adding entry now...
-[INFO]: Key data (5:498) not in frame data dictionary, adding entry now...
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Data (SCEE08007 1) is invalid not updating frame data dictionary
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Data () is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Data () is invalid not updating frame data dictionary
+[INFO]: Key data (2) has changed from -1 -> 2
+[INFO]: Data (SCEE08007 2) is invalid not updating frame data dictionary
+[INFO]: Key data (-1) has changed from 2 -> -1
+[INFO]: Data () is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Data () is invalid not updating frame data dictionary
+[INFO]: Key data (3) has changed from -1 -> 3
+[INFO]: Data (SCEE08007 3) is invalid not updating frame data dictionary
+[INFO]: Key data (-1) has changed from 3 -> -1
+[INFO]: Data () is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Data () is invalid not updating frame data dictionary
+[INFO]: Key data (5) has changed from -1 -> 5
+[INFO]: Data (SCEE08007 5) is invalid not updating frame data dictionary
+[INFO]: Key data (-1) has changed from 5 -> -1
+[INFO]: Data () is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Data () is invalid not updating frame data dictionary
 [INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
 [INFO]: [BEFORE] Videos Number of Frames: 750, Number of Read Frames; 746
 [INFO]: [AFTER] Videos Number of Frames: 746, Number of Read Frames; 746
 [INFO]: All reader threads stopped, final thread read 746
-[INFO]: Cretaing valid threshold dictionary
 [INFO]: 
 Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary
 [INFO]: Video has a frame rate of ~29.97002997002997 and total number of frame ~750
@@ -22,17 +38,23 @@ Segmenting Video SCEE08007 with date and time: 2020-01-17T12:00Z secondary
 [INFO]: Reading Frames
 [INFO]: started reading frames...
 [INFO]: Initialising Extracting Data
-[INFO]: Key data (4:336) not in frame data dictionary, adding entry now...
+[INFO]: Key data (4) has changed from -1 -> 4
+[INFO]: Data (SCEE08007 4) is invalid not updating frame data dictionary
+[INFO]: Key data (-1) has changed from 4 -> -1
+[INFO]: Data () is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Data () is invalid not updating frame data dictionary
 [INFO]: Initiaiting shutdown on read thread
-[INFO]: Key data (6:687) not in frame data dictionary, adding entry now...
+[INFO]: Key data (6) has changed from -1 -> 6
+[INFO]: Data (SCEE08007 6) is invalid not updating frame data dictionary
+[INFO]: Initialised Extractors Successfully
 [INFO]: [BEFORE] Videos Number of Frames: 750, Number of Read Frames; 746
 [INFO]: [AFTER] Videos Number of Frames: 746, Number of Read Frames; 746
 [INFO]: All reader threads stopped, final thread read 746
-[INFO]: Cretaing valid threshold dictionary
-[INFO]: Raw Frame Stamp Dictionaries: [{1: 72, 2: 175, 3: 264, 5: 557}, {4: 395, 6: 746}]
-[INFO]: Final Time Stamp Dictionary: {1: 72, 2: 175, 3: 264, 5: 557, 4: 395, 6: 746}
-[INFO]: Valid Dictionary: {1: 72, 2: 175, 3: 264, 4: 395, 5: 557, 6: 746}
+[INFO]: Raw Frame Stamp Dictionaries: [{1: 72, 2: 175, 3: 264, 5: 557}, {4: 395}]
+[INFO]: Final Time Stamp Dictionary: {1: 72, 2: 175, 3: 264, 5: 557, 4: 395}
+[INFO]: Valid Dictionary: {1: 72, 2: 175, 3: 264, 4: 395, 5: 557}
 [INFO]: Video SCEE08007 with date and time: 2020-01-17T12:00Z primary, Frame rate: 746, Total Number of Frames: 29.97002997002997
+[INFO]: Last frame Time (24) not in times array, adding now
 [INFO]: Times Array: [2, 5, 8, 13, 18, 24]
 [INFO]: Time Array: [2, 5, 8, 13, 18, 24]
 [INFO]: Creating Sub Clips...

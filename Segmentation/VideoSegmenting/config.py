@@ -10,3 +10,4 @@ kaltura_dir = os.path.join(root_dir,"Kaltura")
 VIDEO_DIRECTORY = os.path.join(information_dir,"Videos/segmented_videos")
 COURSE_CSV_FILE = os.path.join(information_dir, "Docs/subject.csv")
 THRESHOLD_FRAME = 120 #~4s
+THRESHOLD_FRAME_TIMEOUT = 300 #~10s

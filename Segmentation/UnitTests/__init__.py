@@ -14,10 +14,11 @@ sys.path.append(test_videos_scenario_topics_behind)
 
 from Logger import logger
 import logging
-from Subject import Subject, Subject_List
+#from Subject import Subject, Subject_List
 from Video import Video
 from VideoSegmenting.Sub_Clip import combine_frame_stamps
 from Video import Video
+from Segmentor import _add_topic_frame_values
 import logging
 logger = logging.getLogger("Logger")
 from segment import start

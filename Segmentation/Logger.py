@@ -12,6 +12,7 @@ if (os.path.exists(log_dir)==False):
 log_path_info  = os.path.join(log_dir,'file_info.log')
 log_path_error = os.path.join(log_dir,'file_error.log')
 log_path_debug = os.path.join(log_dir,'file_debug.log')
+
 # Create handlers
 c_handler = logging.StreamHandler()
 d_handler = logging.FileHandler(log_path_debug, mode='w')   #mode='w' ensures this files is overwritten every time the logger runs 
@@ -21,6 +22,7 @@ i_handler = logging.FileHandler(log_path_info)
 c_handler.setLevel(logging.DEBUG)
 f_handler.setLevel(logging.ERROR)
 i_handler.setLevel(logging.INFO)
+d_handler.setLevel(logging.DEBUG)
 
 # Create formatters and add it to handlers
 c_format = logging.Formatter('[%(levelname)s]: %(message)s')

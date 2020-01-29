@@ -20,4 +20,5 @@ scenario_4_2_QR_till_end = os.path.join(test_videos_dir,"scenario_4_2_QR_till_en
 # INFORMATION FILES
 VIDEO_DIRECTORY = os.path.join(information_dir,"Videos/segmented_videos")
 COURSE_CSV_FILE = os.path.join(information_dir, "Docs/subject.csv")
-THRESHOLD_FRAME = 120
+THRESHOLD_FRAME_CONTINUOUS = 120 #~4s
+THRESHOLD_FRAME_TIMEOUT = 300 #~10S

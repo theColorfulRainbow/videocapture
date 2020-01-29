@@ -5,7 +5,7 @@ import time
 import logging
 from Video import Video
 from download_all_lectures import begin as download_lecture
-from config import VIDEO_DIRECTORY, COURSE_CSV_FILE, THRESHOLD_FRAME
+from config import VIDEO_DIRECTORY, COURSE_CSV_FILE, THRESHOLD_FRAME_CONTINUOUS, THRESHOLD_FRAME_TIMEOUT
 from Sub_Clip import combine_frame_stamps, frame_number_to_time, create_subClips
 from pathlib import Path
 
@@ -15,10 +15,10 @@ logger = logging.getLogger("Logger")
 # GOES BACK TWO times ("+ os.sep + os.pardir" x 2) and goes into Videos folder
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
-def segment(video, threshold_frame):
+def segment(video, threshold_frame, threshold_frame_timeout):
     logger.debug("Segmenting Video: {}, threshold_frame: {}".format(video.code,threshold_frame))
     # intialise segmentor
-    my_Segmentor = Segmentor(video, threshold_frame)
+    my_Segmentor = Segmentor(video, threshold_frame, threshold_frame_timeout)
     # time_array should also be set in the Video object itself
     frame_stamps = my_Segmentor.start()
     return frame_stamps
@@ -32,7 +32,7 @@ def download_lectures():
 def upload_video(video_dir):
     return
 
-def start(duo_videos,threshold_frame=THRESHOLD_FRAME):
+def start(duo_videos,threshold_frame_continuous, threshold_frame_timeout):
     # check if videos empty
     if (len(duo_videos) == 0):
         logger.info("No new lectures Downloaded, exiting!")
@@ -41,6 +41,7 @@ def start(duo_videos,threshold_frame=THRESHOLD_FRAME):
     # segment each video
     frame_stamps = []
     for videos in duo_videos:
+        frame_stamps = []
         for video in videos:
             # check if primary video is null
             if (video == None):
@@ -56,7 +57,7 @@ def start(duo_videos,threshold_frame=THRESHOLD_FRAME):
 
                 logger.debug("Video: {}".format(video))
                 # segment the video
-                frame_stamp = segment(video, threshold_frame)
+                frame_stamp = segment(video, threshold_frame_continuous, threshold_frame_timeout )
                 frame_stamps.append(frame_stamp)
                 logger.debug("Appending Frame stamp {}".format(frame_stamps))
         
@@ -83,7 +84,7 @@ def start(duo_videos,threshold_frame=THRESHOLD_FRAME):
 def main():
     logger.setLevel(logging.DEBUG)
     logger.info(30*"-" + "\nBeginning Segmentation")
-    # download and get all the videos to segment
+    #download and get all the videos to segment
     #duo_videos = download_lectures()
 
     # testing the qr video we made
@@ -91,9 +92,9 @@ def main():
     test_video_secondary = Video("SCEE08007","2019-2020","2020-01-17T12:00Z","primary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/TestVideos/scenario_4_2_QR_till_end/video_secondary.mp4")
     duo_videos = [[test_video_primary, test_video_secondary]]
     logger.info("Lectures Downloaded!")
-    #threshold_frame = THRESHOLD_FRAME
-    threshold_frame = 1
-    start(duo_videos, threshold_frame=threshold_frame)
+    threshold_frame_continuous = 1
+    threshold_frame_timeout = THRESHOLD_FRAME_TIMEOUT
+    start(duo_videos, threshold_frame_continuous,threshold_frame_timeout)
 
 if (__name__ == "__main__"):
     main()
