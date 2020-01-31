@@ -154,7 +154,7 @@ class Segmentor(object):
                 self.logger.info("Key data ({}) has changed from {} -> {}".format(key_data, last_topic_seen, key_data))
                 # we only care about adding valid data to the dictionary
                 if (self.verifier.verify(last_frame_data)):
-                    self.logger.info("Data ({}) is valid, going to check the topic seen array to see if valid QR code seen".format(data))
+                    self.logger.info("Data ({}) is valid, going to check the topic seen array to see if valid QR code seen".format(last_frame_data))
                     self.dictionary_frame_data = _add_topic_frame_values(self.dictionary_frame_data,  last_topic_seen, frame_number_topic_started_at, frame_number_topic_current_at, frame_number_continous_topic_seen,self.THRESHOLD_FRAME_CONTINUOUS, self.THRESHOLD_FRAME_TIMEOUT)
                 self.logger.info("Data ({}) is invalid not updating frame data dictionary".format(data))
                 # update the new values for self.current_topic_seen

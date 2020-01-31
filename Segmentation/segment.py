@@ -15,10 +15,10 @@ logger = logging.getLogger("Logger")
 # GOES BACK TWO times ("+ os.sep + os.pardir" x 2) and goes into Videos folder
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
-def segment(video, threshold_frame, threshold_frame_timeout):
-    logger.debug("Segmenting Video: {}, threshold_frame: {}".format(video.code,threshold_frame))
+def segment(video, threshold_frame_continuous, threshold_frame_timeout):
+    logger.info("Segmenting Video: {}, Threshold Frame Continuous: {}, Threshold Frame Timeout: {}".format(video.code,threshold_frame_continuous, threshold_frame_timeout))
     # intialise segmentor
-    my_Segmentor = Segmentor(video, threshold_frame, threshold_frame_timeout)
+    my_Segmentor = Segmentor(video, threshold_frame_continuous, threshold_frame_timeout)
     # time_array should also be set in the Video object itself
     frame_stamps = my_Segmentor.start()
     return frame_stamps
@@ -82,17 +82,17 @@ def start(duo_videos,threshold_frame_continuous, threshold_frame_timeout):
 
 # the main operation
 def main():
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.INFO)
     logger.info(30*"-" + "\nBeginning Segmentation")
     #download and get all the videos to segment
-    #duo_videos = download_lectures()
+    duo_videos = download_lectures()
 
     # testing the qr video we made
     test_video_primary = Video("SCEE08007","2019-2020","2020-01-17T12:00Z","secondary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/TestVideos/scenario_4_2_QR_till_end/video_primary.mp4")
     test_video_secondary = Video("SCEE08007","2019-2020","2020-01-17T12:00Z","primary.mp4","/afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/UnitTests/TestVideos/scenario_4_2_QR_till_end/video_secondary.mp4")
-    duo_videos = [[test_video_primary, test_video_secondary]]
+    #duo_videos = [[test_video_primary, test_video_secondary]]
     logger.info("Lectures Downloaded!")
-    threshold_frame_continuous = 1
+    threshold_frame_continuous = THRESHOLD_FRAME_CONTINUOUS
     threshold_frame_timeout = THRESHOLD_FRAME_TIMEOUT
     start(duo_videos, threshold_frame_continuous,threshold_frame_timeout)
 
