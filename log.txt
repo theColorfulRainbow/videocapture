@@ -403,3 +403,121 @@ Downloading resource: 2019-2020/ELEE11076/2020-01-23T14.10.00.000Z/primary.mp4
 Downloading resource: 2019-2020/ELEE11076/2020-01-23T14.10.00.000Z/secondary.mp4
 Downloading resource: 2019-2020/ELEE11076/2020-01-29T13.10.00.000Z/primary.mp4
 Downloading resource: 2019-2020/ELEE11076/2020-01-29T13.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+A html file is where a binary file (video or slides) should be.
+This probably means the cookies in 'cookies.txt' need updating.
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-24T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-24T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-28T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-28T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-30T11.10.16.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-30T11.10.16.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/secondary.mp4
+Downloading course: ELEE11076 (ELEE11076)
+Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-16T14.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-16T14.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-24T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-24T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-28T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-28T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-30T11.10.16.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-30T11.10.16.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/secondary.mp4
+Downloading course: ELEE11076 (ELEE11076)
+Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-16T14.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-16T14.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-22T13.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-22T13.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-24T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-24T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-28T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-28T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-30T11.10.16.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-30T11.10.16.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/secondary.mp4
+Downloading course: ELEE11076 (ELEE11076)
+Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-16T14.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-16T14.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-22T13.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-22T13.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-23T14.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-23T14.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-29T13.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-29T13.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-30T14.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-30T14.10.00.000Z/secondary.mp4
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+A html file is where a binary file (video or slides) should be.
+This probably means the cookies in 'cookies.txt' need updating.
+Downloading course: SCEE08007 (SCEE08007)
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-17T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-21T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-24T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-24T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-28T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-28T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-30T11.10.16.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-30T11.10.16.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/primary.mp4
+Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/secondary.mp4
+Downloading course: ELEE11076 (ELEE11076)
+Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-16T14.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-16T14.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-22T13.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-22T13.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-23T14.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-23T14.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-29T13.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-29T13.10.00.000Z/secondary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-30T14.10.00.000Z/primary.mp4
+Downloading resource: 2019-2020/ELEE11076/2020-01-30T14.10.00.000Z/secondary.mp4

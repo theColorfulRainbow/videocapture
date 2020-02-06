@@ -2,15 +2,15 @@
 Beginning Segmentation
 [INFO]: Downloading Lectures...
 [INFO]: Courses Participating: {
-name: Signals and Communications 2
-code: SCEE08007
-year: 2019-2020
-organizer: James Hopgood
-, 
 name: BioSensor Instrumentation 5
 code: ELEE11076
 year: 2019-2020
 organizer: Stewart Smith
+, 
+name: Signals and Communications 2
+code: SCEE08007
+year: 2019-2020
+organizer: James Hopgood
 }
 [INFO]: Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/primary.mp4
 [INFO]: Downloading resource: 2019-2020/SCEE08007/2020-01-14T11.10.00.000Z/secondary.mp4
@@ -34,6 +34,14 @@ organizer: Stewart Smith
 [INFO]: Successfully Downloaded: SCEE08007 with date and time: 2020-01-30T11.10.16.000Z primary
 [INFO]: Downloading resource: 2019-2020/SCEE08007/2020-01-30T11.10.16.000Z/secondary.mp4
 [INFO]: Successfully Downloaded: SCEE08007 with date and time: 2020-01-30T11.10.16.000Z secondary
+[INFO]: Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/primary.mp4
+[INFO]: Successfully Downloaded: SCEE08007 with date and time: 2020-01-31T11.10.00.000Z primary
+[INFO]: Downloading resource: 2019-2020/SCEE08007/2020-01-31T11.10.00.000Z/secondary.mp4
+[INFO]: Successfully Downloaded: SCEE08007 with date and time: 2020-01-31T11.10.00.000Z secondary
+[INFO]: Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/primary.mp4
+[INFO]: Successfully Downloaded: SCEE08007 with date and time: 2020-02-03T09.00.00.000Z primary
+[INFO]: Downloading resource: 2019-2020/SCEE08007/2020-02-03T09.00.00.000Z/secondary.mp4
+[INFO]: Successfully Downloaded: SCEE08007 with date and time: 2020-02-03T09.00.00.000Z secondary
 [INFO]: Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/primary.mp4
 [INFO]: Downloading resource: 2019-2020/ELEE11076/2020-01-15T13.10.00.000Z/secondary.mp4
 [INFO]: Downloading resource: 2019-2020/ELEE11076/2020-01-16T14.10.00.000Z/primary.mp4
@@ -46,7 +54,11 @@ organizer: Stewart Smith
 [INFO]: Successfully Downloaded: ELEE11076 with date and time: 2020-01-29T13.10.00.000Z primary
 [INFO]: Downloading resource: 2019-2020/ELEE11076/2020-01-29T13.10.00.000Z/secondary.mp4
 [INFO]: Successfully Downloaded: ELEE11076 with date and time: 2020-01-29T13.10.00.000Z secondary
-[INFO]: Duo Videos: [[SCEE08007 with date and time: 2020-01-17T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-17T11.10.00.000Z secondary], [SCEE08007 with date and time: 2020-01-21T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-21T11.10.00.000Z secondary], [SCEE08007 with date and time: 2020-01-24T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-24T11.10.00.000Z secondary], [SCEE08007 with date and time: 2020-01-28T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-28T11.10.00.000Z secondary], [SCEE08007 with date and time: 2020-01-30T11.10.16.000Z primary, SCEE08007 with date and time: 2020-01-30T11.10.16.000Z secondary], [ELEE11076 with date and time: 2020-01-29T13.10.00.000Z primary, ELEE11076 with date and time: 2020-01-29T13.10.00.000Z secondary]]
+[INFO]: Downloading resource: 2019-2020/ELEE11076/2020-01-30T14.10.00.000Z/primary.mp4
+[INFO]: Successfully Downloaded: ELEE11076 with date and time: 2020-01-30T14.10.00.000Z primary
+[INFO]: Downloading resource: 2019-2020/ELEE11076/2020-01-30T14.10.00.000Z/secondary.mp4
+[INFO]: Successfully Downloaded: ELEE11076 with date and time: 2020-01-30T14.10.00.000Z secondary
+[INFO]: Duo Videos: [[SCEE08007 with date and time: 2020-01-17T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-17T11.10.00.000Z secondary], [SCEE08007 with date and time: 2020-01-21T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-21T11.10.00.000Z secondary], [SCEE08007 with date and time: 2020-01-24T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-24T11.10.00.000Z secondary], [SCEE08007 with date and time: 2020-01-28T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-28T11.10.00.000Z secondary], [SCEE08007 with date and time: 2020-01-30T11.10.16.000Z primary, SCEE08007 with date and time: 2020-01-30T11.10.16.000Z secondary], [SCEE08007 with date and time: 2020-01-31T11.10.00.000Z primary, SCEE08007 with date and time: 2020-01-31T11.10.00.000Z secondary], [SCEE08007 with date and time: 2020-02-03T09.00.00.000Z primary, SCEE08007 with date and time: 2020-02-03T09.00.00.000Z secondary], [ELEE11076 with date and time: 2020-01-29T13.10.00.000Z primary, ELEE11076 with date and time: 2020-01-29T13.10.00.000Z secondary], [ELEE11076 with date and time: 2020-01-30T14.10.00.000Z primary, ELEE11076 with date and time: 2020-01-30T14.10.00.000Z secondary]]
 [INFO]: Lectures Downloaded!
 [INFO]: 
 Segmenting Video SCEE08007 with date and time: 2020-01-17T11.10.00.000Z primary
@@ -56,3 +68,853 @@ Segmenting Video SCEE08007 with date and time: 2020-01-17T11.10.00.000Z primary
 [INFO]: Reading Frames
 [INFO]: started reading frames...
 [INFO]: Initialising Extracting Data
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Data (SCEE08007 1) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Data (SCEE08007 1) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Data (SCEE08007 1) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (2) has changed from -1 -> 2
+[INFO]: Key data (-1) has changed from 2 -> -1
+[INFO]: Data (SCEE08007 2) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (2) has changed from -1 -> 2
+[INFO]: Key data (-1) has changed from 2 -> -1
+[INFO]: Data (SCEE08007 2) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 90338, Number of Read Frames; 90338
+[INFO]: [AFTER] Videos Number of Frames: 90338, Number of Read Frames; 90338
+[INFO]: All reader threads stopped, final thread read 90338
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-17T11.10.00.000Z secondary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~90338
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 1) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Data (SCEE08007 1) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (2) has changed from -1 -> 2
+[INFO]: Key data (-1) has changed from 2 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 2) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (3) has changed from -1 -> 3
+[INFO]: Key data (-1) has changed from 3 -> -1
+[INFO]: Data (SCEE08007 3) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (3) has changed from -1 -> 3
+[INFO]: Key data (-1) has changed from 3 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 3) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (4) has changed from -1 -> 4
+[INFO]: Key data (-1) has changed from 4 -> -1
+[INFO]: Data (SCEE08007 4) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (4) has changed from -1 -> 4
+[INFO]: Key data (-1) has changed from 4 -> -1
+[INFO]: Data (SCEE08007 4) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (4) has changed from -1 -> 4
+[INFO]: Key data (-1) has changed from 4 -> -1
+[INFO]: Data (SCEE08007 4) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 90338, Number of Read Frames; 90338
+[INFO]: [AFTER] Videos Number of Frames: 90338, Number of Read Frames; 90338
+[INFO]: All reader threads stopped, final thread read 90338
+[INFO]: Raw Frame Stamp Dictionaries: [{}, {1: 25744, 2: 27034, 3: 39187}]
+[INFO]: Final Time Stamp Dictionary: {1: 25744, 2: 27034, 3: 39187}
+[INFO]: Valid Dictionary: {1: 25744, 2: 27034, 3: 39187}
+[INFO]: Video SCEE08007 with date and time: 2020-01-17T11.10.00.000Z primary, Frame rate: 90338, Total Number of Frames: 30.0
+[INFO]: Last frame Time (3011) not in times array, adding now
+[INFO]: Times Array: [858, 901, 1306, 3011]
+[INFO]: Time Array: [858, 901, 1306, 3011]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 3011.29
+times_array: [858, 901, 1306, 3011]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_17T11_10_00_000Z_primary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_17T11_10_00_000Z_primary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_17T11_10_00_000Z_primary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_17T11_10_00_000Z_primary_topic_4.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 3011.29
+times_array: [858, 901, 1306, 3011]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_17T11_10_00_000Z_secondary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_17T11_10_00_000Z_secondary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_17T11_10_00_000Z_secondary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_17T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_17T11_10_00_000Z_secondary_topic_4.mp4
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-21T11.10.00.000Z primary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~87924
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (2) has changed from -1 -> 2
+[INFO]: Key data (-1) has changed from 2 -> -1
+[INFO]: Data (SCEE08007 2) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (4) has changed from -1 -> 4
+[INFO]: Key data (-1) has changed from 4 -> -1
+[INFO]: Data (SCEE08007 4) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (5) has changed from -1 -> 5
+[INFO]: Key data (-1) has changed from 5 -> -1
+[INFO]: Data (SCEE08007 5) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (5) has changed from -1 -> 5
+[INFO]: Key data (-1) has changed from 5 -> -1
+[INFO]: Data (SCEE08007 5) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (5) has changed from -1 -> 5
+[INFO]: Key data (-1) has changed from 5 -> -1
+[INFO]: Data (SCEE08007 5) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (6) has changed from -1 -> 6
+[INFO]: Key data (-1) has changed from 6 -> -1
+[INFO]: Data (SCEE08007 6) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (6) has changed from -1 -> 6
+[INFO]: Key data (-1) has changed from 6 -> -1
+[INFO]: Data (SCEE08007 6) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (7) has changed from -1 -> 7
+[INFO]: Key data (-1) has changed from 7 -> -1
+[INFO]: Data (SCEE08007 7) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (8) has changed from -1 -> 8
+[INFO]: Key data (-1) has changed from 8 -> -1
+[INFO]: Data (SCEE08007 8) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (9) has changed from -1 -> 9
+[INFO]: Key data (-1) has changed from 9 -> -1
+[INFO]: Data (SCEE08007 9) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (10) has changed from -1 -> 10
+[INFO]: Key data (-1) has changed from 10 -> -1
+[INFO]: Data (SCEE08007 10) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (10) has changed from -1 -> 10
+[INFO]: Key data (-1) has changed from 10 -> -1
+[INFO]: Data (SCEE08007 10) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (11) has changed from -1 -> 11
+[INFO]: Key data (-1) has changed from 11 -> -1
+[INFO]: Data (SCEE08007 11) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (12) has changed from -1 -> 12
+[INFO]: Key data (-1) has changed from 12 -> -1
+[INFO]: Data (SCEE08007 12) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (13) has changed from -1 -> 13
+[INFO]: Key data (-1) has changed from 13 -> -1
+[INFO]: Data (SCEE08007 13) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (14) has changed from -1 -> 14
+[INFO]: Key data (-1) has changed from 14 -> -1
+[INFO]: Data (SCEE08007 14) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (15) has changed from -1 -> 15
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Key data (-1) has changed from 15 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 15) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 87924, Number of Read Frames; 87924
+[INFO]: [AFTER] Videos Number of Frames: 87924, Number of Read Frames; 87924
+[INFO]: All reader threads stopped, final thread read 87924
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-21T11.10.00.000Z secondary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~87924
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 87924, Number of Read Frames; 87924
+[INFO]: [AFTER] Videos Number of Frames: 87924, Number of Read Frames; 87924
+[INFO]: All reader threads stopped, final thread read 87924
+[INFO]: Raw Frame Stamp Dictionaries: [{15: 87914}, {}]
+[INFO]: Final Time Stamp Dictionary: {15: 87914}
+[INFO]: Valid Dictionary: {15: 87914}
+[INFO]: Video SCEE08007 with date and time: 2020-01-21T11.10.00.000Z primary, Frame rate: 87924, Total Number of Frames: 30.0
+[INFO]: Times Array: [2930]
+[INFO]: Time Array: [2930]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2930.82
+times_array: [2930]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_21T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_21T11_10_00_000Z_primary_topic_1.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2930.82
+times_array: [2930]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_21T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_21T11_10_00_000Z_secondary_topic_1.mp4
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-24T11.10.00.000Z primary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~90976
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (15) has changed from -1 -> 15
+[INFO]: Key data (-1) has changed from 15 -> -1
+[INFO]: Data (SCEE08007 15) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (14) has changed from -1 -> 14
+[INFO]: Key data (-1) has changed from 14 -> -1
+[INFO]: Data (SCEE08007 14) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (13) has changed from -1 -> 13
+[INFO]: Key data (-1) has changed from 13 -> -1
+[INFO]: Data (SCEE08007 13) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (12) has changed from -1 -> 12
+[INFO]: Key data (-1) has changed from 12 -> -1
+[INFO]: Data (SCEE08007 12) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (13) has changed from -1 -> 13
+[INFO]: Key data (-1) has changed from 13 -> -1
+[INFO]: Data (SCEE08007 13) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (14) has changed from -1 -> 14
+[INFO]: Key data (-1) has changed from 14 -> -1
+[INFO]: Data (SCEE08007 14) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (16) has changed from -1 -> 16
+[INFO]: Key data (-1) has changed from 16 -> -1
+[INFO]: Data (SCEE08007 16) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (17) has changed from -1 -> 17
+[INFO]: Key data (-1) has changed from 17 -> -1
+[INFO]: Data (SCEE08007 17) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (17) has changed from -1 -> 17
+[INFO]: Key data (-1) has changed from 17 -> -1
+[INFO]: Data (SCEE08007 17) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (18) has changed from -1 -> 18
+[INFO]: Key data (-1) has changed from 18 -> -1
+[INFO]: Data (SCEE08007 18) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (18) has changed from -1 -> 18
+[INFO]: Key data (-1) has changed from 18 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 18) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (19) has changed from -1 -> 19
+[INFO]: Key data (-1) has changed from 19 -> -1
+[INFO]: Data (SCEE08007 19) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (19) has changed from -1 -> 19
+[INFO]: Key data (-1) has changed from 19 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 19) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (20) has changed from -1 -> 20
+[INFO]: Key data (-1) has changed from 20 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 20) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (21) has changed from -1 -> 21
+[INFO]: Key data (-1) has changed from 21 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 21) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 90976, Number of Read Frames; 90976
+[INFO]: [AFTER] Videos Number of Frames: 90976, Number of Read Frames; 90976
+[INFO]: All reader threads stopped, final thread read 90976
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-24T11.10.00.000Z secondary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~90976
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 90976, Number of Read Frames; 90976
+[INFO]: [AFTER] Videos Number of Frames: 90976, Number of Read Frames; 90976
+[INFO]: All reader threads stopped, final thread read 90976
+[INFO]: Raw Frame Stamp Dictionaries: [{18: 47809, 19: 48081, 20: 66728, 21: 82191}, {}]
+[INFO]: Final Time Stamp Dictionary: {18: 47809, 19: 48081, 20: 66728, 21: 82191}
+[INFO]: Valid Dictionary: {18: 47809, 19: 48081, 20: 66728, 21: 82191}
+[INFO]: Video SCEE08007 with date and time: 2020-01-24T11.10.00.000Z primary, Frame rate: 90976, Total Number of Frames: 30.0
+[INFO]: Last frame Time (3032) not in times array, adding now
+[INFO]: Times Array: [1593, 1602, 2224, 2739, 3032]
+[INFO]: Time Array: [1593, 1602, 2224, 2739, 3032]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 3032.56
+times_array: [1593, 1602, 2224, 2739, 3032]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_primary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_primary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_primary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_primary_topic_4.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_primary_topic_5.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 3032.56
+times_array: [1593, 1602, 2224, 2739, 3032]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_secondary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_secondary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_secondary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_secondary_topic_4.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_24T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_24T11_10_00_000Z_secondary_topic_5.mp4
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-28T11.10.00.000Z primary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~78427
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (22) has changed from -1 -> 22
+[INFO]: Key data (-1) has changed from 22 -> -1
+[INFO]: Data (SCEE08007 22) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (21) has changed from -1 -> 21
+[INFO]: Key data (-1) has changed from 21 -> -1
+[INFO]: Data (SCEE08007 21) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (19) has changed from -1 -> 19
+[INFO]: Key data (-1) has changed from 19 -> -1
+[INFO]: Data (SCEE08007 19) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (18) has changed from -1 -> 18
+[INFO]: Key data (-1) has changed from 18 -> -1
+[INFO]: Data (SCEE08007 18) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (19) has changed from -1 -> 19
+[INFO]: Key data (-1) has changed from 19 -> -1
+[INFO]: Data (SCEE08007 19) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (20) has changed from -1 -> 20
+[INFO]: Key data (-1) has changed from 20 -> -1
+[INFO]: Data (SCEE08007 20) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (21) has changed from -1 -> 21
+[INFO]: Key data (-1) has changed from 21 -> -1
+[INFO]: Data (SCEE08007 21) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (22) has changed from -1 -> 22
+[INFO]: Key data (-1) has changed from 22 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 22) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (23) has changed from -1 -> 23
+[INFO]: Key data (-1) has changed from 23 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 23) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (23) has changed from -1 -> 23
+[INFO]: Key data (-1) has changed from 23 -> -1
+[INFO]: Topic (23) is within time-out, adding!
+[INFO]: Data (SCEE08007 23) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (24) has changed from -1 -> 24
+[INFO]: Key data (-1) has changed from 24 -> -1
+[INFO]: Data (SCEE08007 24) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (24) has changed from -1 -> 24
+[INFO]: Key data (-1) has changed from 24 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 24) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (25) has changed from -1 -> 25
+[INFO]: Key data (-1) has changed from 25 -> -1
+[INFO]: Data (SCEE08007 25) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (26878126) has changed from -1 -> 26878126
+[INFO]: Key data (-1) has changed from 26878126 -> -1
+[INFO]: Data (SCEE08007 26878126) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (27878126) has changed from -1 -> 27878126
+[INFO]: Key data (-1) has changed from 27878126 -> -1
+[INFO]: Data (SCEE08007 27878126) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 78427, Number of Read Frames; 78427
+[INFO]: [AFTER] Videos Number of Frames: 78427, Number of Read Frames; 78427
+[INFO]: All reader threads stopped, final thread read 78427
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-28T11.10.00.000Z secondary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~78427
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 78427, Number of Read Frames; 78427
+[INFO]: [AFTER] Videos Number of Frames: 78427, Number of Read Frames; 78427
+[INFO]: All reader threads stopped, final thread read 78427
+[INFO]: Raw Frame Stamp Dictionaries: [{22: 37533, 23: 72404, 24: 76416}, {}]
+[INFO]: Final Time Stamp Dictionary: {22: 37533, 23: 72404, 24: 76416}
+[INFO]: Valid Dictionary: {22: 37533, 23: 72404, 24: 76416}
+[INFO]: Video SCEE08007 with date and time: 2020-01-28T11.10.00.000Z primary, Frame rate: 78427, Total Number of Frames: 30.0
+[INFO]: Last frame Time (2614) not in times array, adding now
+[INFO]: Times Array: [1251, 2413, 2547, 2614]
+[INFO]: Time Array: [1251, 2413, 2547, 2614]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2614.25
+times_array: [1251, 2413, 2547, 2614]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_28T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_28T11_10_00_000Z_primary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_28T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_28T11_10_00_000Z_primary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_28T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_28T11_10_00_000Z_primary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_28T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_28T11_10_00_000Z_primary_topic_4.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2614.25
+times_array: [1251, 2413, 2547, 2614]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_28T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_28T11_10_00_000Z_secondary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_28T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_28T11_10_00_000Z_secondary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_28T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_28T11_10_00_000Z_secondary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_28T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_28T11_10_00_000Z_secondary_topic_4.mp4
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-30T11.10.16.000Z primary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~80846
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (25) has changed from -1 -> 25
+[INFO]: Key data (-1) has changed from 25 -> -1
+[INFO]: Data (SCEE08007 25) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (25) has changed from -1 -> 25
+[INFO]: Key data (-1) has changed from 25 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 25) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (26) has changed from -1 -> 26
+[INFO]: Key data (-1) has changed from 26 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 26) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (26) has changed from -1 -> 26
+[INFO]: Key data (-1) has changed from 26 -> -1
+[INFO]: Data (SCEE08007 26) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (25) has changed from -1 -> 25
+[INFO]: Key data (-1) has changed from 25 -> -1
+[INFO]: Data (SCEE08007 25) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (25) has changed from -1 -> 25
+[INFO]: Key data (-1) has changed from 25 -> -1
+[INFO]: Data (SCEE08007 25) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (26) has changed from -1 -> 26
+[INFO]: Key data (-1) has changed from 26 -> -1
+[INFO]: Data (SCEE08007 26) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (27) has changed from -1 -> 27
+[INFO]: Key data (-1) has changed from 27 -> -1
+[INFO]: Data (SCEE08007 27) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 80846, Number of Read Frames; 80846
+[INFO]: [AFTER] Videos Number of Frames: 80846, Number of Read Frames; 80846
+[INFO]: All reader threads stopped, final thread read 80846
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-30T11.10.16.000Z secondary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~80845
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 80845, Number of Read Frames; 80845
+[INFO]: [AFTER] Videos Number of Frames: 80845, Number of Read Frames; 80845
+[INFO]: All reader threads stopped, final thread read 80845
+[INFO]: Raw Frame Stamp Dictionaries: [{25: 38831, 26: 52909}, {}]
+[INFO]: Final Time Stamp Dictionary: {25: 38831, 26: 52909}
+[INFO]: Valid Dictionary: {25: 38831, 26: 52909}
+[INFO]: Video SCEE08007 with date and time: 2020-01-30T11.10.16.000Z primary, Frame rate: 80846, Total Number of Frames: 30.0
+[INFO]: Last frame Time (2694) not in times array, adding now
+[INFO]: Times Array: [1294, 1763, 2694]
+[INFO]: Time Array: [1294, 1763, 2694]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2694.87
+times_array: [1294, 1763, 2694]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_30T11_10_16_000Z/primary_mp4/SCEE08007_2020_01_30T11_10_16_000Z_primary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_30T11_10_16_000Z/primary_mp4/SCEE08007_2020_01_30T11_10_16_000Z_primary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_30T11_10_16_000Z/primary_mp4/SCEE08007_2020_01_30T11_10_16_000Z_primary_topic_3.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2694.85
+times_array: [1294, 1763, 2694]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_30T11_10_16_000Z/secondary_mp4/SCEE08007_2020_01_30T11_10_16_000Z_secondary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_30T11_10_16_000Z/secondary_mp4/SCEE08007_2020_01_30T11_10_16_000Z_secondary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_30T11_10_16_000Z/secondary_mp4/SCEE08007_2020_01_30T11_10_16_000Z_secondary_topic_3.mp4
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-31T11.10.00.000Z primary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~92139
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (27) has changed from -1 -> 27
+[INFO]: Key data (-1) has changed from 27 -> -1
+[INFO]: Data (SCEE08007 27) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (27) has changed from -1 -> 27
+[INFO]: Key data (-1) has changed from 27 -> -1
+[INFO]: Data (SCEE08007 27) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (26) has changed from -1 -> 26
+[INFO]: Key data (-1) has changed from 26 -> -1
+[INFO]: Data (SCEE08007 26) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (26) has changed from -1 -> 26
+[INFO]: Key data (-1) has changed from 26 -> -1
+[INFO]: Data (SCEE08007 26) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (27) has changed from -1 -> 27
+[INFO]: Key data (-1) has changed from 27 -> -1
+[INFO]: Data (SCEE08007 27) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (25) has changed from -1 -> 25
+[INFO]: Key data (-1) has changed from 25 -> -1
+[INFO]: Data (SCEE08007 25) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (26) has changed from -1 -> 26
+[INFO]: Key data (-1) has changed from 26 -> -1
+[INFO]: Data (SCEE08007 26) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (27) has changed from -1 -> 27
+[INFO]: Key data (-1) has changed from 27 -> -1
+[INFO]: Data (SCEE08007 27) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (27) has changed from -1 -> 27
+[INFO]: Key data (-1) has changed from 27 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 27) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (28) has changed from -1 -> 28
+[INFO]: Key data (-1) has changed from 28 -> -1
+[INFO]: Data (SCEE08007 28) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (28) has changed from -1 -> 28
+[INFO]: Key data (-1) has changed from 28 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 28) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (28) has changed from -1 -> 28
+[INFO]: Key data (-1) has changed from 28 -> -1
+[INFO]: Data (SCEE08007 28) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (27) has changed from -1 -> 27
+[INFO]: Key data (-1) has changed from 27 -> -1
+[INFO]: Data (SCEE08007 27) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (26) has changed from -1 -> 26
+[INFO]: Key data (-1) has changed from 26 -> -1
+[INFO]: Data (SCEE08007 26) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (25) has changed from -1 -> 25
+[INFO]: Key data (-1) has changed from 25 -> -1
+[INFO]: Data (SCEE08007 25) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (24) has changed from -1 -> 24
+[INFO]: Key data (-1) has changed from 24 -> -1
+[INFO]: Data (SCEE08007 24) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (24) has changed from -1 -> 24
+[INFO]: Key data (-1) has changed from 24 -> -1
+[INFO]: Data (SCEE08007 24) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (29) has changed from -1 -> 29
+[INFO]: Key data (-1) has changed from 29 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 29) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (29) has changed from -1 -> 29
+[INFO]: Key data (-1) has changed from 29 -> -1
+[INFO]: Data (SCEE08007 29) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (29) has changed from -1 -> 29
+[INFO]: Key data (-1) has changed from 29 -> -1
+[INFO]: Data (SCEE08007 29) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (30) has changed from -1 -> 30
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 92139, Number of Read Frames; 92139
+[INFO]: [AFTER] Videos Number of Frames: 92139, Number of Read Frames; 92139
+[INFO]: All reader threads stopped, final thread read 92139
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-01-31T11.10.00.000Z secondary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~92138
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 92138, Number of Read Frames; 92138
+[INFO]: [AFTER] Videos Number of Frames: 92138, Number of Read Frames; 92138
+[INFO]: All reader threads stopped, final thread read 92138
+[INFO]: Raw Frame Stamp Dictionaries: [{27: 52387, 28: 62791, 29: 85726}, {}]
+[INFO]: Final Time Stamp Dictionary: {27: 52387, 28: 62791, 29: 85726}
+[INFO]: Valid Dictionary: {27: 52387, 28: 62791, 29: 85726}
+[INFO]: Video SCEE08007 with date and time: 2020-01-31T11.10.00.000Z primary, Frame rate: 92139, Total Number of Frames: 30.0
+[INFO]: Last frame Time (3071) not in times array, adding now
+[INFO]: Times Array: [1746, 2093, 2857, 3071]
+[INFO]: Time Array: [1746, 2093, 2857, 3071]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 3071.3
+times_array: [1746, 2093, 2857, 3071]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_31T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_31T11_10_00_000Z_primary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_31T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_31T11_10_00_000Z_primary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_31T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_31T11_10_00_000Z_primary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_31T11_10_00_000Z/primary_mp4/SCEE08007_2020_01_31T11_10_00_000Z_primary_topic_4.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 3071.27
+times_array: [1746, 2093, 2857, 3071]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_31T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_31T11_10_00_000Z_secondary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_31T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_31T11_10_00_000Z_secondary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_31T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_31T11_10_00_000Z_secondary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_01_31T11_10_00_000Z/secondary_mp4/SCEE08007_2020_01_31T11_10_00_000Z_secondary_topic_4.mp4
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-02-03T09.00.00.000Z primary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~87289
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (29) has changed from -1 -> 29
+[INFO]: Key data (-1) has changed from 29 -> -1
+[INFO]: Data (SCEE08007 29) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (28) has changed from -1 -> 28
+[INFO]: Key data (-1) has changed from 28 -> -1
+[INFO]: Data (SCEE08007 28) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (28) has changed from -1 -> 28
+[INFO]: Key data (-1) has changed from 28 -> -1
+[INFO]: Data (SCEE08007 28) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (29) has changed from -1 -> 29
+[INFO]: Key data (-1) has changed from 29 -> -1
+[INFO]: Data (SCEE08007 29) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (29) has changed from -1 -> 29
+[INFO]: Key data (-1) has changed from 29 -> -1
+[INFO]: Data (SCEE08007 29) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (30) has changed from -1 -> 30
+[INFO]: Key data (-1) has changed from 30 -> -1
+[INFO]: Data (SCEE08007 30) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (31) has changed from -1 -> 31
+[INFO]: Key data (-1) has changed from 31 -> -1
+[INFO]: Data (SCEE08007 31) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (31) has changed from -1 -> 31
+[INFO]: Key data (-1) has changed from 31 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (SCEE08007 31) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (31) has changed from -1 -> 31
+[INFO]: Key data (-1) has changed from 31 -> -1
+[INFO]: Data (SCEE08007 31) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (31) has changed from -1 -> 31
+[INFO]: Key data (-1) has changed from 31 -> -1
+[INFO]: Topic is not within timeout, not adding
+[INFO]: Data (SCEE08007 31) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (31) has changed from -1 -> 31
+[INFO]: Key data (-1) has changed from 31 -> -1
+[INFO]: Topic is not within timeout, not adding
+[INFO]: Data (SCEE08007 31) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (30) has changed from -1 -> 30
+[INFO]: Key data (-1) has changed from 30 -> -1
+[INFO]: Data (SCEE08007 30) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (30) has changed from -1 -> 30
+[INFO]: Key data (-1) has changed from 30 -> -1
+[INFO]: Data (SCEE08007 30) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (31) has changed from -1 -> 31
+[INFO]: Key data (-1) has changed from 31 -> -1
+[INFO]: Topic is not within timeout, not adding
+[INFO]: Data (SCEE08007 31) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (32) has changed from -1 -> 32
+[INFO]: Key data (-1) has changed from 32 -> -1
+[INFO]: Data (SCEE08007 32) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (32) has changed from -1 -> 32
+[INFO]: Key data (-1) has changed from 32 -> -1
+[INFO]: Data (SCEE08007 32) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 87289, Number of Read Frames; 87289
+[INFO]: [AFTER] Videos Number of Frames: 87289, Number of Read Frames; 87289
+[INFO]: All reader threads stopped, final thread read 87289
+[INFO]: 
+Segmenting Video SCEE08007 with date and time: 2020-02-03T09.00.00.000Z secondary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~87289
+[INFO]: Segmenting Video: SCEE08007, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 87289, Number of Read Frames; 87289
+[INFO]: [AFTER] Videos Number of Frames: 87289, Number of Read Frames; 87289
+[INFO]: All reader threads stopped, final thread read 87289
+[INFO]: Raw Frame Stamp Dictionaries: [{31: 51050}, {}]
+[INFO]: Final Time Stamp Dictionary: {31: 51050}
+[INFO]: Valid Dictionary: {31: 51050}
+[INFO]: Video SCEE08007 with date and time: 2020-02-03T09.00.00.000Z primary, Frame rate: 87289, Total Number of Frames: 30.0
+[INFO]: Last frame Time (2909) not in times array, adding now
+[INFO]: Times Array: [1701, 2909]
+[INFO]: Time Array: [1701, 2909]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2909.63
+times_array: [1701, 2909]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_02_03T09_00_00_000Z/primary_mp4/SCEE08007_2020_02_03T09_00_00_000Z_primary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_02_03T09_00_00_000Z/primary_mp4/SCEE08007_2020_02_03T09_00_00_000Z_primary_topic_2.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2909.63
+times_array: [1701, 2909]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_02_03T09_00_00_000Z/secondary_mp4/SCEE08007_2020_02_03T09_00_00_000Z_secondary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/SCEE08007/2019-2020/2020_02_03T09_00_00_000Z/secondary_mp4/SCEE08007_2020_02_03T09_00_00_000Z_secondary_topic_2.mp4
+[INFO]: 
+Segmenting Video ELEE11076 with date and time: 2020-01-29T13.10.00.000Z primary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~83629
+[INFO]: Segmenting Video: ELEE11076, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (ELEE11076 1) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Topic is not within timeout, not adding
+[INFO]: Data (ELEE11076 1) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Topic is not within timeout, not adding
+[INFO]: Data (ELEE11076 1) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (2) has changed from -1 -> 2
+[INFO]: Key data (-1) has changed from 2 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (ELEE11076 2) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (3) has changed from -1 -> 3
+[INFO]: Key data (-1) has changed from 3 -> -1
+[INFO]: Data (ELEE11076 3) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (3) has changed from -1 -> 3
+[INFO]: Key data (-1) has changed from 3 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (ELEE11076 3) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (4) has changed from -1 -> 4
+[INFO]: Key data (-1) has changed from 4 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (ELEE11076 4) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (5) has changed from -1 -> 5
+[INFO]: Key data (-1) has changed from 5 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (ELEE11076 5) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (6) has changed from -1 -> 6
+[INFO]: Key data (-1) has changed from 6 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (ELEE11076 6) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (6) has changed from -1 -> 6
+[INFO]: Key data (-1) has changed from 6 -> -1
+[INFO]: Topic is not within timeout, not adding
+[INFO]: Data (ELEE11076 6) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (6) has changed from -1 -> 6
+[INFO]: Key data (-1) has changed from 6 -> -1
+[INFO]: Topic is not within timeout, not adding
+[INFO]: Data (ELEE11076 6) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Key data (6) has changed from -1 -> 6
+[INFO]: Key data (-1) has changed from 6 -> -1
+[INFO]: Topic is not within timeout, not adding
+[INFO]: Data (ELEE11076 6) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 83629, Number of Read Frames; 83629
+[INFO]: [AFTER] Videos Number of Frames: 83629, Number of Read Frames; 83629
+[INFO]: All reader threads stopped, final thread read 83629
+[INFO]: 
+Segmenting Video ELEE11076 with date and time: 2020-01-29T13.10.00.000Z secondary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~83629
+[INFO]: Segmenting Video: ELEE11076, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Key data (1) has changed from -1 -> 1
+[INFO]: Key data (-1) has changed from 1 -> -1
+[INFO]: Topic is successfully continuous, adding it
+[INFO]: Data (ELEE11076 1) is valid, going to check the topic seen array to see if valid QR code seen
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 83629, Number of Read Frames; 83629
+[INFO]: [AFTER] Videos Number of Frames: 83629, Number of Read Frames; 83629
+[INFO]: All reader threads stopped, final thread read 83629
+[INFO]: Raw Frame Stamp Dictionaries: [{1: 8687, 2: 29723, 3: 36114, 4: 41242, 5: 56604, 6: 70793}, {1: 8181}]
+[INFO]: Final Time Stamp Dictionary: {1: 8687, 2: 29723, 3: 36114, 4: 41242, 5: 56604, 6: 70793}
+[INFO]: Valid Dictionary: {1: 8687, 2: 29723, 3: 36114, 4: 41242, 5: 56604, 6: 70793}
+[INFO]: Video ELEE11076 with date and time: 2020-01-29T13.10.00.000Z primary, Frame rate: 83629, Total Number of Frames: 30.0
+[INFO]: Last frame Time (2787) not in times array, adding now
+[INFO]: Times Array: [289, 990, 1203, 1374, 1886, 2359, 2787]
+[INFO]: Time Array: [289, 990, 1203, 1374, 1886, 2359, 2787]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2787.65
+times_array: [289, 990, 1203, 1374, 1886, 2359, 2787]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/primary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_primary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/primary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_primary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/primary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_primary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/primary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_primary_topic_4.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/primary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_primary_topic_5.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/primary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_primary_topic_6.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/primary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_primary_topic_7.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 2787.65
+times_array: [289, 990, 1203, 1374, 1886, 2359, 2787]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/secondary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_secondary_topic_1.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/secondary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_secondary_topic_2.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/secondary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_secondary_topic_3.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/secondary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_secondary_topic_4.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/secondary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_secondary_topic_5.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/secondary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_secondary_topic_6.mp4
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_29T13_10_00_000Z/secondary_mp4/ELEE11076_2020_01_29T13_10_00_000Z_secondary_topic_7.mp4
+[INFO]: 
+Segmenting Video ELEE11076 with date and time: 2020-01-30T14.10.00.000Z primary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~90187
+[INFO]: Segmenting Video: ELEE11076, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 90187, Number of Read Frames; 90187
+[INFO]: [AFTER] Videos Number of Frames: 90187, Number of Read Frames; 90187
+[INFO]: All reader threads stopped, final thread read 90187
+[INFO]: 
+Segmenting Video ELEE11076 with date and time: 2020-01-30T14.10.00.000Z secondary
+[INFO]: Video has a frame rate of ~30.0 and total number of frame ~90188
+[INFO]: Segmenting Video: ELEE11076, Threshold Frame Continuous: 120, Threshold Frame Timeout: 300
+[INFO]: starting video file thread...
+[INFO]: Reading Frames
+[INFO]: started reading frames...
+[INFO]: Initialising Extracting Data
+[INFO]: Initiaiting shutdown on read thread
+[INFO]: Initialised Extractors Successfully
+[INFO]: [BEFORE] Videos Number of Frames: 90188, Number of Read Frames; 90188
+[INFO]: [AFTER] Videos Number of Frames: 90188, Number of Read Frames; 90188
+[INFO]: All reader threads stopped, final thread read 90188
+[INFO]: Raw Frame Stamp Dictionaries: [{}, {}]
+[INFO]: Final Time Stamp Dictionary: {}
+[INFO]: Video ELEE11076 with date and time: 2020-01-30T14.10.00.000Z primary, Frame rate: 90187, Total Number of Frames: 30.0
+[INFO]: Last frame Time (3006) not in times array, adding now
+[INFO]: Times Array: [3006]
+[INFO]: Time Array: [3006]
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 3006.27
+times_array: [3006]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_30T14_10_00_000Z/primary_mp4/ELEE11076_2020_01_30T14_10_00_000Z_primary_topic_1.mp4
+[INFO]: Creating Sub Clips...
+[INFO]: clip_duration: 3006.27
+times_array: [3006]
+[INFO]: Saving segmented videos
+[INFO]: Saving Video: /afs/inf.ed.ac.uk/user/s16/s1645821/Desktop/segmentation_git/Segmentation/Information/Videos/segmented_videos/ELEE11076/2019-2020/2020_01_30T14_10_00_000Z/secondary_mp4/ELEE11076_2020_01_30T14_10_00_000Z_secondary_topic_1.mp4
