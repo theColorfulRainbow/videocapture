@@ -1,3 +1,8 @@
-[ERROR] Trying to Segent video where this time: 605 is less than previous segmented time: 0 {File: (Sub_Clip.py), Function: (create_subClips), Line: (32), at (2020-01-25 19:21:26,762)}
+[ERROR] Trying to Segent video where this time: 2930 is less than previous segmented time: 2932 {File: (Sub_Clip.py), Function: (create_subClips), Line: (33), at (2020-01-27 19:51:45,251)}
 NoneType: None
-[ERROR] A html file is where a binary file (video or slides) should be. This probably means the cookies in 'cookies.txt' need updating. {File: (download_all_lectures.py), Function: (_downloadResource), Line: (176), at (2020-01-25 21:12:37,837)}
+[ERROR] Trying to Segent video where this time: 2614 is less than previous segmented time: 2930 {File: (Sub_Clip.py), Function: (create_subClips), Line: (33), at (2020-01-29 18:28:01,642)}
+NoneType: None
+[ERROR] A html file is where a binary file (video or slides) should be. This probably means the cookies in 'cookies.txt' need updating. {File: (download_all_lectures.py), Function: (_downloadResource), Line: (176), at (2020-01-29 19:01:10,228)}
+[ERROR] A html file is where a binary file (video or slides) should be. This probably means the cookies in 'cookies.txt' need updating. {File: (download_all_lectures.py), Function: (_downloadResource), Line: (176), at (2020-01-31 09:46:10,864)}
+[ERROR] A html file is where a binary file (video or slides) should be. This probably means the cookies in 'cookies.txt' need updating. {File: (download_all_lectures.py), Function: (_downloadResource), Line: (176), at (2020-02-04 16:11:49,455)}
+[ERROR] A html file is where a binary file (video or slides) should be. This probably means the cookies in 'cookies.txt' need updating. {File: (download_all_lectures.py), Function: (_downloadResource), Line: (176), at (2020-02-05 10:15:21,633)}
